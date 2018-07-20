@@ -1,0 +1,226 @@
+<Type Name="DistinguishedFolderIdType" FullName="ExchangeWebServices.DistinguishedFolderIdType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0b1ff9e1aa14e8ce8bdd4d41c206163ebdac4f11" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603477" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class DistinguishedFolderIdType : ExchangeWebServices.BaseFolderIdType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DistinguishedFolderIdType extends ExchangeWebServices.BaseFolderIdType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DistinguishedFolderIdType" />
+  <TypeSignature Language="VB.NET" Value="Public Class DistinguishedFolderIdType&#xA;Inherits BaseFolderIdType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DistinguishedFolderIdType : ExchangeWebServices::BaseFolderIdType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseFolderIdType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="4ea93-101">
+        <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />类标识可以通过名称引用的 Microsoft Exchange Server 文件夹。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4ea93-101">The <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> class identifies Microsoft Exchange Server folders that can be referenced by name.</span>
+      </span>
+      <span data-ttu-id="4ea93-102">如果您不使用此类，则必须使用<see cref="T:ExchangeWebServices.FolderIdType" />类来识别文件夹。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4ea93-102">If you do not use this class, you must use the <see cref="T:ExchangeWebServices.FolderIdType" /> class to identify a folder.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="4ea93-103">
+        <para>A<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />对象解析为<see cref="T:ExchangeWebServices.FolderIdType" />Exchange 服务器上的对象。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4ea93-103">
+          <para>A <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> object resolves to a <see cref="T:ExchangeWebServices.FolderIdType" /> object on the Exchange server.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DistinguishedFolderIdType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.DistinguishedFolderIdType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DistinguishedFolderIdType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ea93-104">
+            <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />类。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-104">The <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeKey">
+      <MemberSignature Language="C#" Value="public string ChangeKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChangeKey" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChangeKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ea93-105">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" />属性获取或设置一个字符串，标识的文件夹的由版本<see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-105">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" /> property gets or sets a string that identifies a version of a folder that is identified by the <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" /> property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ea93-106">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" />属性返回一个 string 类型值，该值代表更改密钥。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-106">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" /> property returns a string that represents a change key.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4ea93-107">
+            <para>此属性是可选的。使用此属性以确保正确版本的文件夹使用。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-107">
+              <para>This property is optional. Use this property to make sure that the correct version of a folder is used.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DistinguishedFolderIdNameType Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.DistinguishedFolderIdNameType Id" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As DistinguishedFolderIdNameType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::DistinguishedFolderIdNameType Id { ExchangeWebServices::DistinguishedFolderIdNameType get(); void set(ExchangeWebServices::DistinguishedFolderIdNameType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DistinguishedFolderIdNameType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ea93-108">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />属性获取或设置一个默认文件夹的标识。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-108">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" /> property gets or sets the identity of a default folder.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ea93-109">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />属性返回<see cref="T:ExchangeWebServices.DistinguishedFolderIdNameType" />枚举值，该值代表默认文件夹。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-109">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" /> property returns a <see cref="T:ExchangeWebServices.DistinguishedFolderIdNameType" /> enumeration that represents a default folder.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4ea93-110">
+            <para>此属性是必需的。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-110">
+              <para>This property is required.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mailbox">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType Mailbox { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType Mailbox" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mailbox As EmailAddressType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EmailAddressType ^ Mailbox { ExchangeWebServices::EmailAddressType ^ get(); void set(ExchangeWebServices::EmailAddressType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ea93-111">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" />属性获取或设置的代理人访问方案的主体的主 SMTP 地址。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-111">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" /> property gets or sets a primary SMTP address of a principal for a delegate access scenario.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ea93-112">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" />属性返回<see cref="T:ExchangeWebServices.EmailAddressType" />对象，表示代理人访问方案中的主体。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-112">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" /> property returns an <see cref="T:ExchangeWebServices.EmailAddressType" /> object that represents a principal in a delegate access scenario.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4ea93-113">
+            <para>代理地址不为值允许此属性。此属性是必需的代理访问。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ea93-113">
+              <para>Proxy addresses are not allowed as a value for this property. This property is required for delegate access.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

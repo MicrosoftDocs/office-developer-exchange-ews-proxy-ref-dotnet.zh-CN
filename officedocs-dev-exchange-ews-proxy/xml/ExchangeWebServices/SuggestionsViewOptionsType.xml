@@ -1,0 +1,584 @@
+<Type Name="SuggestionsViewOptionsType" FullName="ExchangeWebServices.SuggestionsViewOptionsType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7840bc63d9469baac710ec274b785eb01c6dc2d5" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602041" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SuggestionsViewOptionsType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SuggestionsViewOptionsType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SuggestionsViewOptionsType" />
+  <TypeSignature Language="VB.NET" Value="Public Class SuggestionsViewOptionsType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SuggestionsViewOptionsType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="27d73-101">
+        <see cref="T:ExchangeWebServices.SuggestionsViewOptionsType" />类包含选项的获取会议建议信息。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="27d73-101">The <see cref="T:ExchangeWebServices.SuggestionsViewOptionsType" /> class contains options for obtaining meeting suggestion information.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SuggestionsViewOptionsType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SuggestionsViewOptionsType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SuggestionsViewOptionsType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-102">
+            <see cref="T:ExchangeWebServices.SuggestionsViewOptionsType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.SuggestionsViewOptionsType" />类。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-102">The <see cref="T:ExchangeWebServices.SuggestionsViewOptionsType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.SuggestionsViewOptionsType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentMeetingTime">
+      <MemberSignature Language="C#" Value="public DateTime CurrentMeetingTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CurrentMeetingTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentMeetingTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CurrentMeetingTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-103">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" />属性获取或设置当前会议的开始时间。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-103">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" /> property gets or sets the current start time of a meeting.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-104">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" />属性返回包含当前开始时间会议的日期/时间值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-104">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" /> property returns a date/time value containing the current start time of a meeting.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentMeetingTimeSpecified">
+      <MemberSignature Language="C#" Value="public bool CurrentMeetingTimeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CurrentMeetingTimeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTimeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentMeetingTimeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CurrentMeetingTimeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-105">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTimeSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" />属性序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-105">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTimeSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="27d73-106">必须指定此属性，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" />指定属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-106">This property must be specified if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-107">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTimeSpecified" />属性为<b>true</b> ，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-107">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTimeSpecified" /> property is <b>true</b> if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.CurrentMeetingTime" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailedSuggestionsWindow">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.Duration DetailedSuggestionsWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.Duration DetailedSuggestionsWindow" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.DetailedSuggestionsWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailedSuggestionsWindow As Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::Duration ^ DetailedSuggestionsWindow { ExchangeWebServices::Duration ^ get(); void set(ExchangeWebServices::Duration ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.Duration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-108">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.DetailedSuggestionsWindow" />属性获取或设置的时间跨度查询建议的会议时间的详细信息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-108">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.DetailedSuggestionsWindow" /> property gets or sets the time span to query for detailed information on suggested meeting times.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-109">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.DetailedSuggestionsWindow" />属性返回<see cref="T:ExchangeWebServices.Duration" />对象包含时间跨越查询建议的会议时间的详细信息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-109">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.DetailedSuggestionsWindow" /> property returns a <see cref="T:ExchangeWebServices.Duration" /> object containing the time span to query for detailed information on suggested meeting times.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="27d73-110">
+            <para>
+              <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.DetailedSuggestionsWindow" />属性必须设置为小时、 分钟和秒零日期/时间。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-110">
+              <para>The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.DetailedSuggestionsWindow" /> property must have the date/time set with zero for the hours, minutes and seconds.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalObjectId">
+      <MemberSignature Language="C#" Value="public string GlobalObjectId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GlobalObjectId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.GlobalObjectId" />
+      <MemberSignature Language="VB.NET" Value="Public Property GlobalObjectId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GlobalObjectId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-111">不使用此属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-111">This property is not used.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-112">不使用此属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-112">This property is not used.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoodThreshold">
+      <MemberSignature Language="C#" Value="public int GoodThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GoodThreshold" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property GoodThreshold As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GoodThreshold { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-113">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" />属性获取或设置必须打开来限定为良好建议会议 tiem 的时间段的时间段的与会者的百分比。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-113">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" /> property gets or sets the percentage of attendees that must have a time period open for the time period to qualify as a good suggested meeting tiem.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-114">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" />属性返回必须打开来限定为良好建议的会议时间的时间段的时间段的与会者的百分比。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-114">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" /> property returns the percentage of attendees that must have a time period open for the time period to qualify as a good suggested meeting time.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoodThresholdSpecified">
+      <MemberSignature Language="C#" Value="public bool GoodThresholdSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GoodThresholdSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThresholdSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property GoodThresholdSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GoodThresholdSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-115">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThresholdSpecified" />属性获取或设置一个布尔值指定是否<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" />属性已序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-115">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThresholdSpecified" /> property gets or sets a Boolean value that specified whether the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" /> property was serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="27d73-116">必须指定此属性，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" />指定属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-116">This property must be specified if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-117">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThresholdSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-117">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThresholdSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.GoodThreshold" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumNonWorkHourResultsByDay">
+      <MemberSignature Language="C#" Value="public int MaximumNonWorkHourResultsByDay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumNonWorkHourResultsByDay" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumNonWorkHourResultsByDay As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumNonWorkHourResultsByDay { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-118">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" />属性获取或设置的建议每个会议正常工作时间以外的时间的工作日的结果数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-118">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" /> property gets or sets the suggested number of results per day for meeting times outside regular working hours.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-119">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" />属性返回的建议每个会议正常工作时间以外的时间的工作日的结果数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-119">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" /> property returns the suggested number of results per day for meeting times outside regular working hours.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumNonWorkHourResultsByDaySpecified">
+      <MemberSignature Language="C#" Value="public bool MaximumNonWorkHourResultsByDaySpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaximumNonWorkHourResultsByDaySpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDaySpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumNonWorkHourResultsByDaySpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaximumNonWorkHourResultsByDaySpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-120">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDaySpecified" />属性获取或设置一个布尔值指定是否<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" />属性已序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-120">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDaySpecified" /> property gets or sets a Boolean value that specified whether the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" /> property was serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="27d73-121">必须指定此属性，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" />指定属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-121">This property must be specified if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-122">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDaySpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-122">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDaySpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumNonWorkHourResultsByDay" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumResultsByDay">
+      <MemberSignature Language="C#" Value="public int MaximumResultsByDay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumResultsByDay" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumResultsByDay As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumResultsByDay { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-123">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" />属性获取或设置每日的会议建议的最大数量。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-123">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" /> property gets or sets the maximum number of meeting suggestions per day.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-124">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" />属性返回的最大每日的会议建议数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-124">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" /> property returns the maximum number of meeting suggestions per day.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumResultsByDaySpecified">
+      <MemberSignature Language="C#" Value="public bool MaximumResultsByDaySpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaximumResultsByDaySpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDaySpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumResultsByDaySpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaximumResultsByDaySpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-125">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDaySpecified" />属性获取或设置一个布尔值指定是否<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" />属性已序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-125">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDaySpecified" /> property gets or sets a Boolean value that specified whether the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" /> property was serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="27d73-126">必须指定此属性，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" />指定属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-126">This property must be specified if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-127">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDaySpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-127">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDaySpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MaximumResultsByDay" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingDurationInMinutes">
+      <MemberSignature Language="C#" Value="public int MeetingDurationInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MeetingDurationInMinutes" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingDurationInMinutes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MeetingDurationInMinutes { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-128">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" />属性获取或设置会议的时间长度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-128">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" /> property gets or sets the length of meeting.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-129">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" />属性返回建议会议的时间长度，以分钟为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-129">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" /> property returns the length of the suggested meeting in minutes.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingDurationInMinutesSpecified">
+      <MemberSignature Language="C#" Value="public bool MeetingDurationInMinutesSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MeetingDurationInMinutesSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutesSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingDurationInMinutesSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MeetingDurationInMinutesSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-130">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutesSpecified" />属性获取或设置一个布尔值指定是否<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" />属性已序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-130">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutesSpecified" /> property gets or sets a Boolean value that specified whether the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" /> property was serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="27d73-131">必须指定此属性，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" />指定属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-131">This property must be specified if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-132">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutesSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-132">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutesSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MeetingDurationInMinutes" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumSuggestionQuality">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SuggestionQuality MinimumSuggestionQuality { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.SuggestionQuality MinimumSuggestionQuality" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumSuggestionQuality As SuggestionQuality" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SuggestionQuality MinimumSuggestionQuality { ExchangeWebServices::SuggestionQuality get(); void set(ExchangeWebServices::SuggestionQuality value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SuggestionQuality</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-133">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" />属性获取或设置的建议的响应中返回的最小质量。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-133">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" /> property get or sets the minimum quality of suggestions to return in the response.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-134">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" />属性返回其中一个<see cref="T:ExchangeWebServices.SuggestionQuality" />枚举值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-134">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" /> property returns one of the <see cref="T:ExchangeWebServices.SuggestionQuality" /> enumeration values.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumSuggestionQualitySpecified">
+      <MemberSignature Language="C#" Value="public bool MinimumSuggestionQualitySpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MinimumSuggestionQualitySpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQualitySpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumSuggestionQualitySpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MinimumSuggestionQualitySpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="27d73-135">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQualitySpecified" />属性获取或设置一个布尔值指定是否<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" />属性已序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-135">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQualitySpecified" /> property gets or sets a Boolean value that specified whether the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" /> property was serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="27d73-136">必须指定此属性，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" />指定属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-136">This property must be specified if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="27d73-137">
+            <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQualitySpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="27d73-137">The <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQualitySpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.SuggestionsViewOptionsType.MinimumSuggestionQuality" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

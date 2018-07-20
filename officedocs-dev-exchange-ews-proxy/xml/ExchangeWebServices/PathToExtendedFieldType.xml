@@ -1,0 +1,457 @@
+<Type Name="PathToExtendedFieldType" FullName="ExchangeWebServices.PathToExtendedFieldType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b8ad9cd7c979b233b6f2b452b037e7a656f5ac3b" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602775" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class PathToExtendedFieldType : ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PathToExtendedFieldType extends ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.PathToExtendedFieldType" />
+  <TypeSignature Language="VB.NET" Value="Public Class PathToExtendedFieldType&#xA;Inherits BasePathToElementType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PathToExtendedFieldType : ExchangeWebServices::BasePathToElementType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePathToElementType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="16ce6-101">
+        <see cref="T:ExchangeWebServices.PathToExtendedFieldType" />类表示的扩展的 MAPI 属性。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="16ce6-101">The <see cref="T:ExchangeWebServices.PathToExtendedFieldType" /> class represents an extended MAPI property.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PathToExtendedFieldType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.PathToExtendedFieldType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathToExtendedFieldType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-102">
+            <see cref="T:ExchangeWebServices.PathToExtendedFieldType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.PathToExtendedFieldType" />类。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-102">The <see cref="T:ExchangeWebServices.PathToExtendedFieldType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.PathToExtendedFieldType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DistinguishedPropertySetId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DistinguishedPropertySetType DistinguishedPropertySetId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.DistinguishedPropertySetType DistinguishedPropertySetId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DistinguishedPropertySetId As DistinguishedPropertySetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::DistinguishedPropertySetType DistinguishedPropertySetId { ExchangeWebServices::DistinguishedPropertySetType get(); void set(ExchangeWebServices::DistinguishedPropertySetType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DistinguishedPropertySetType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-103">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />属性获取或设置的已知属性设置为扩展的 MAPI 属性的 Id。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-103">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> property gets or sets well-known property set IDs for extended MAPI properties.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-104">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />属性返回<see cref="T:ExchangeWebServices.DistinguishedPropertySetType" />枚举。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-104">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> property returns a <see cref="T:ExchangeWebServices.DistinguishedPropertySetType" /> enumeration.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="16ce6-105">
+            <para>如果<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />属性使用，<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性不能使用。此属性必须使用使用<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />或<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />属性，和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" />属性。</para>
+            <para>必须设置<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetIdSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />属性序列化为 SOAP 消息。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-105">
+              <para>If the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> property is used, the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" /> and <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> properties cannot be used. This property must be used with either the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> or <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" /> property, and the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" /> property.</para>
+              <para>You must set the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetIdSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> property is serialized into the SOAP message.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DistinguishedPropertySetIdSpecified">
+      <MemberSignature Language="C#" Value="public bool DistinguishedPropertySetIdSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DistinguishedPropertySetIdSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetIdSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DistinguishedPropertySetIdSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DistinguishedPropertySetIdSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-106">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetIdSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />属性序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-106">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetIdSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> property is serialized into the SOAP message.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-107">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetIdSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-107">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetIdSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyId">
+      <MemberSignature Language="C#" Value="public int PropertyId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PropertyId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PropertyId { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-108">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />属性获取或设置其调度 id 的扩展的属性</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-108">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> property gets or sets an extended property by its dispatch ID.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-109">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />属性返回一个整数，表示属性调度标识符。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-109">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> property returns an integer that represents a property dispatch identifier.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="16ce6-110">
+            <para>十进制或十六进制格式可以标识调度 ID。<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />属性必须在使用以下任意加以<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />或<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />属性。</para>
+            <para>如果<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />使用时，<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性不能。</para>
+            <para>必须设置<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyIdSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />属性序列化为 SOAP 消息。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-110">
+              <para>A dispatch ID can be identified in either decimal or hexadecimal formats. The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> property must be coupled with either the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> or <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" /> property.</para>
+              <para>If the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> is used, the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" /> and <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> properties cannot be used.</para>
+              <para>You must set the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyIdSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> property is serialized into the SOAP message.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyIdSpecified">
+      <MemberSignature Language="C#" Value="public bool PropertyIdSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PropertyIdSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.PropertyIdSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyIdSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PropertyIdSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-111">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyIdSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />属性序列化为 SOAP 消息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-111">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyIdSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> property is serialized into the SOAP message.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-112">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyIdSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-112">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyIdSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public string PropertyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-113">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />属性获取或设置由其名称的扩展的属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-113">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" /> property gets or sets an extended property by its name.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-114">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />属性返回一个 string 类型值，该值代表扩展的属性的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-114">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" /> property returns a string that represents an extended property by name.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="16ce6-115">
+            <para>此属性必须在使用以下任意加以<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />或<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />属性。</para>
+            <para>如果使用此属性，则<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性不能。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-115">
+              <para>This property must be coupled with either the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> or <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" /> property.</para>
+              <para>If this attribute is used, the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> and <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> properties cannot be used.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySetId">
+      <MemberSignature Language="C#" Value="public string PropertySetId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertySetId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertySetId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertySetId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-116">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />属性获取或设置由其标识 GUID 扩展属性集或命名空间的 MAPI。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-116">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" /> property gets or sets a MAPI extended property set or namespace by its identifying GUID.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-117">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />属性返回一个字符串，表示为 GUID。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-117">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" /> property returns a string that represents a GUID.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="16ce6-118">
+            <para>如果使用此属性，则<see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性不能使用。此属性必须使用使用<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />或<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />属性和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" />属性。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-118">
+              <para>If this property is used, the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" /> and <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> properties cannot be used. This property must be used with either the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> or <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" /> properties, and the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyTag">
+      <MemberSignature Language="C#" Value="public string PropertyTag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyTag" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyTag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyTag { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-119">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性获取或设置不带标记的类型部分的属性标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-119">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> property gets or sets the property tag without the type part of the tag.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-120">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性返回的字符串表示形式没有标记的类型部分的属性标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-120">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> property returns a string representation of a property tag without the type part of the tag.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="16ce6-121">
+            <para>
+              <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性可以为十六进制数或一个简短的整数表示。</para>
+            <para>1 到 999 之间 0x8000 和 0xFFFE 表示自定义范围的属性。当邮箱数据库首次遇到的自定义属性时，它会将该自定义属性分配 0x8000 0xFFFE 自定义属性范围内的属性标记。给定的自定义属性标记将很可能数据库而异。因此，按属性标记的自定义属性请求可能返回不同的属性在不同的数据库。使用<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性禁止自定义属性。而是使用<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />属性和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />或<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />属性。</para>
+            <para>
+              <b>重要说明</b>： 访问 0x8000 和 0xFFFE 之间的任何自定义属性，通过使用 GUID + 名称/id。</para>
+            <para>如果<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" />属性使用， <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />， <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />， <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />，和<see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" />属性不能。</para>
+            <para>
+              <b>注释</b>： 不能使用属性标记为 0x8000 0xFFFE 自定义范围内的属性。您必须在这种情况下使用的命名的属性。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-121">
+              <para>The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> property can be represented as either a hexadecimal or a short integer.</para>
+              <para>The range between 0x8000 and 0xFFFE represents the custom range of properties. When a mailbox database encounters a custom property for the first time, it assigns that custom property a property tag within the custom property range of 0x8000-0xFFFE. A given custom property tag will most likely differ across databases. Therefore, a custom property request by property tag can return different properties on different databases. The use of the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> property is prohibited for custom properties. Instead, use the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" /> property and the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" /> or <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> property.</para>
+              <para>
+                <b>Important</b>: Access any custom property between 0x8000 and 0xFFFE by using the GUID + name/ID.</para>
+              <para>If the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyTag" /> property is used, the <see cref="P:ExchangeWebServices.PathToExtendedFieldType.DistinguishedPropertySetId" />, <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertySetId" />, <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyName" />, and <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyId" /> properties cannot be used.</para>
+              <para>
+                <b>Note</b>: You cannot use a property tag for properties within the custom range 0x8000-0xFFFE. You must use a named property in this case.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MapiPropertyTypeType PropertyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.MapiPropertyTypeType PropertyType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyType As MapiPropertyTypeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MapiPropertyTypeType PropertyType { ExchangeWebServices::MapiPropertyTypeType get(); void set(ExchangeWebServices::MapiPropertyTypeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MapiPropertyTypeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="16ce6-122">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" />属性获取或设置一个属性标记的属性类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-122">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" /> property gets or sets the property type of a property tag.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="16ce6-123">
+            <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" />属性返回<see cref="T:ExchangeWebServices.MapiPropertyTypeType" />标识属性类型的枚举。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-123">The <see cref="P:ExchangeWebServices.PathToExtendedFieldType.PropertyType" /> property returns a <see cref="T:ExchangeWebServices.MapiPropertyTypeType" /> enumeration that identifies the property type.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="16ce6-124">
+            <para>属性标记的属性类型对应的最低有效字属性标记中。</para>
+            <para>在 Microsoft.NET，long 类型的值是 64 位有符号整数，而在 MAPI 和 COM 中，一个 long 类型是 32 位整数。大多数开发人员将使用 Microsoft.NET Framework 开发 Exchange Web 服务客户端应用程序。因此，.NET 命名使用而不是 MAPI 命名。例如，PR_MESSAGE_FLAGS MAPI 属性 0x0E07，为 PT_LONG 类型。在.NET 中，则被视为一个整数。PR_MESSAGE_FLAGS 扩展的属性定义为&lt;t:ExtendedFieldURI PropertyTag ="0x0E07"PropertyType ="整数"/&gt;。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="16ce6-124">
+              <para>The property type of a property tag corresponds to the least significant word in a property tag.</para>
+              <para>In Microsoft .NET, a Long is a 64-bit signed integer, whereas in MAPI and COM, a Long is a 32-bit integer. Most developers will use the Microsoft .NET Framework to develop Exchange Web Services client applications. Therefore, the .NET naming is used instead of the MAPI naming. For example, the PR_MESSAGE_FLAGS MAPI property, 0x0E07, is a PT_LONG type. In .NET, this is considered an integer. An extended property for PR_MESSAGE_FLAGS is defined as &lt;t:ExtendedFieldURI PropertyTag="0x0E07" PropertyType="Integer"/&gt;.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

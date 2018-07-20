@@ -1,0 +1,167 @@
+<Type Name="ExpandDLType" FullName="ExchangeWebServices.ExpandDLType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4f5882c73d385e4fc86a57f2ce6d8edcd59deec3" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603716" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ExpandDLType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ExpandDLType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ExpandDLType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpandDLType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpandDLType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="4b1e9-101">
+        <see cref="T:ExchangeWebServices.ExpandDLType" />类表示展开通讯组列表的请求。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4b1e9-101">The <see cref="T:ExchangeWebServices.ExpandDLType" /> class represents a request to expand a distribution list.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="4b1e9-102">
+        <para>这两个专用和公用通讯组列表可以扩展。</para>
+        <para>
+          <b>注意</b>： 如果请求中指定的电子邮件地址不对应于通讯组列表，或者请求中指定 ItemId 对应的非私有通讯组列表，则会发生错误。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4b1e9-102">
+          <para>Both private and public distribution lists can be expanded.</para>
+          <para>
+            <b>Note</b>: An error will occur if the EmailAddress that is specified in the request does not correspond to a distribution list, or if the ItemId that is specified in the request corresponds to a non-private distribution list.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="4b1e9-103">
+        <para>下面的代码示例演示如何创建通讯组列表扩展请求。</para>
+        <code>// Create an ExpandDLType.
+ExpandDLType &lt;span class="label"&gt;expandDl&lt;/span&gt; = new ExpandDLType();
+
+// Set the e-mail address and routing type of the distribution list.
+&lt;span class="label"&gt;expandDl&lt;/span&gt;.Mailbox = new EmailAddressType();
+&lt;span class="label"&gt;expandDl&lt;/span&gt;.Mailbox.EmailAddress = "myDL@myDomain.com";
+
+// Expand the distribution list.
+ExpandDLResponseType expandDlResponse = esb.ExpandDL(&lt;span class="label"&gt;expandDl&lt;/span&gt;);</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4b1e9-103">
+          <para>The following code example shows you how a distribution list expansion request is created.</para>
+          <code>// Create an ExpandDLType.
+ExpandDLType &lt;span class="label"&gt;expandDl&lt;/span&gt; = new ExpandDLType();
+
+// Set the e-mail address and routing type of the distribution list.
+&lt;span class="label"&gt;expandDl&lt;/span&gt;.Mailbox = new EmailAddressType();
+&lt;span class="label"&gt;expandDl&lt;/span&gt;.Mailbox.EmailAddress = "myDL@myDomain.com";
+
+// Expand the distribution list.
+ExpandDLResponseType expandDlResponse = esb.ExpandDL(&lt;span class="label"&gt;expandDl&lt;/span&gt;);</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpandDLType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ExpandDLType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandDLType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4b1e9-104">
+            <see cref="T:ExchangeWebServices.ExpandDLType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.ExpandDLType" />类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4b1e9-104">The <see cref="T:ExchangeWebServices.ExpandDLType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.ExpandDLType" /> type.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mailbox">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType Mailbox { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType Mailbox" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ExpandDLType.Mailbox" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mailbox As EmailAddressType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EmailAddressType ^ Mailbox { ExchangeWebServices::EmailAddressType ^ get(); void set(ExchangeWebServices::EmailAddressType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4b1e9-105">
+            <see cref="P:ExchangeWebServices.ExpandDLType.Mailbox" />属性获取或设置要展开的通讯组列表的标识符。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4b1e9-105">The <see cref="P:ExchangeWebServices.ExpandDLType.Mailbox" /> property gets or sets the identifier of the distribution list to expand.</span>
+          </span>
+          <span data-ttu-id="4b1e9-106">此属性是必需的。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4b1e9-106">This property is required.</span>
+          </span>
+          <span data-ttu-id="4b1e9-107">这是一个读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4b1e9-107">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4b1e9-108">
+            <see cref="P:ExchangeWebServices.ExpandDLType.Mailbox" />属性返回<see cref="T:ExchangeWebServices.EmailAddressType" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4b1e9-108">The <see cref="P:ExchangeWebServices.ExpandDLType.Mailbox" /> property returns an <see cref="T:ExchangeWebServices.EmailAddressType" /> object.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4b1e9-109">
+            <para>
+              <see cref="P:ExchangeWebServices.ExpandDLType.Mailbox" />属性设置与<see cref="T:ExchangeWebServices.EmailAddressType" />对象，其中包含是公共通讯组列表的电子邮件地址或私有通讯组列表的项标识符。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4b1e9-109">
+              <para>The <see cref="P:ExchangeWebServices.ExpandDLType.Mailbox" /> property is set with an <see cref="T:ExchangeWebServices.EmailAddressType" /> object that contains either the e-mail address of a public distribution list or the item identifier of a private distribution list. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,215 @@
+<Type Name="DefaultShapeNamesType" FullName="ExchangeWebServices.DefaultShapeNamesType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f097d199d775568bbae3cc049b8b1c1fc0157ffb" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603295" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum DefaultShapeNamesType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DefaultShapeNamesType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DefaultShapeNamesType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DefaultShapeNamesType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DefaultShapeNamesType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="cc6f3-101">
+        <see cref="T:ExchangeWebServices.DefaultShapeNamesType" />枚举标识的项目或文件夹响应中返回的属性的标准集。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="cc6f3-101">The <see cref="T:ExchangeWebServices.DefaultShapeNamesType" /> enumeration identifies standard sets of properties to return in an item or folder response.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="cc6f3-102">
+        <para>此枚举由<see cref="P:ExchangeWebServices.ItemResponseShapeType.BaseShape" />属性<see cref="T:ExchangeWebServices.ItemResponseShapeType" />对象和<see cref="P:ExchangeWebServices.FolderResponseShapeType.BaseShape" />属性<see cref="T:ExchangeWebServices.FolderResponseShapeType" />对象。</para>
+        <para>由 AllProperties，默认情况下，IdOnly 形状返回的属性可以由属性在定义 AdditionalProperties 属性的补充<see cref="T:ExchangeWebServices.ItemResponseShapeType" />和<see cref="T:ExchangeWebServices.FolderResponseShapeType" />对象。</para>
+        <para>下表列出的每个文件夹返回的属性时<see cref="F:ExchangeWebServices.DefaultShapeNamesType.Default" />属性返回文件夹响应。按名称顺序返回给定文件夹的所有子文件夹。</para>
+        <para>默认属性</para>
+        <list type="table">
+          <item>
+            <term>收件箱</term>
+            <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+          </item>
+          <item>
+            <term>联系人</term>
+            <description>文件夹 Id、 显示名称、 总计、 子文件夹计数</description>
+          </item>
+          <item>
+            <term>日历</term>
+            <description>文件夹 Id显示名称，子文件夹计数</description>
+          </item>
+          <item>
+            <term>草稿</term>
+            <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+          </item>
+          <item>
+            <term>已删除邮件</term>
+            <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+          </item>
+          <item>
+            <term>其他文件夹</term>
+            <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+          </item>
+          <item>
+            <term>发件箱</term>
+            <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+          </item>
+          <item>
+            <term>任务</term>
+            <description>文件夹 Id，由于计数、 总计、 子文件夹计数过去的显示名称，</description>
+          </item>
+          <item>
+            <term>Notes</term>
+            <description>文件夹 Id、 显示名称、 总计、 子文件夹计数</description>
+          </item>
+        </list>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="cc6f3-102">
+          <para>This enumeration is used by the <see cref="P:ExchangeWebServices.ItemResponseShapeType.BaseShape" /> property of the <see cref="T:ExchangeWebServices.ItemResponseShapeType" /> object and the <see cref="P:ExchangeWebServices.FolderResponseShapeType.BaseShape" /> property of the <see cref="T:ExchangeWebServices.FolderResponseShapeType" /> object.</para>
+          <para>The properties that are returned by the AllProperties, Default, and IdOnly shapes can be augmented by properties that are defined by the AdditionalProperties property on the <see cref="T:ExchangeWebServices.ItemResponseShapeType" /> and the <see cref="T:ExchangeWebServices.FolderResponseShapeType" /> objects.</para>
+          <para>The following table lists the properties that are returned for each folder when the <see cref="F:ExchangeWebServices.DefaultShapeNamesType.Default" /> properties are returned for a folder response. All subfolders of a given folder are returned in order by name.</para>
+          <para>Default properties</para>
+          <list type="table">
+            <item>
+              <term>Inbox</term>
+              <description>FolderId, display name, unread count, total count, subfolder count</description>
+            </item>
+            <item>
+              <term>Contacts</term>
+              <description>FolderId, display name, total count, subfolder count</description>
+            </item>
+            <item>
+              <term>Calendar</term>
+              <description>FolderId, display name, subfolder count</description>
+            </item>
+            <item>
+              <term>Drafts</term>
+              <description>FolderId, display name, unread count, total count, subfolder count</description>
+            </item>
+            <item>
+              <term>Deleted Items</term>
+              <description>FolderId, display name, unread count, total count, subfolder count</description>
+            </item>
+            <item>
+              <term>Other folders</term>
+              <description>FolderId, display name, unread count, total count, subfolder count</description>
+            </item>
+            <item>
+              <term>Outbox</term>
+              <description>FolderId, display name, unread count, total count, subfolder count</description>
+            </item>
+            <item>
+              <term>Tasks</term>
+              <description>Folder Id, display name, past due count, total count, subfolder count</description>
+            </item>
+            <item>
+              <term>Notes</term>
+              <description>FolderId, display name, total count, subfolder count</description>
+            </item>
+          </list>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllProperties">
+      <MemberSignature Language="C#" Value="AllProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType AllProperties = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.AllProperties" />
+      <MemberSignature Language="VB.NET" Value="AllProperties" />
+      <MemberSignature Language="C++ CLI" Value="AllProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="cc6f3-103">返回为 AllProperties 形状定义的所有属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="cc6f3-103">Returns all the properties that are defined for the AllProperties shape.</span>
+          </span>
+          <span data-ttu-id="cc6f3-104">此选项不会返回所有可用属性的项或文件夹。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="cc6f3-104">This option does not return all available properties for an item or folder.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="cc6f3-105">返回一组定义为项目或文件夹的默认属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="cc6f3-105">Returns a set of properties that are defined as the default for the item or folder.</span>
+          </span>
+          <span data-ttu-id="cc6f3-106">请参阅有关文件夹返回的属性的详细信息本主题后面的表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="cc6f3-106">See the table later in this topic for more information about the properties that are returned for folders.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IdOnly">
+      <MemberSignature Language="C#" Value="IdOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType IdOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.IdOnly" />
+      <MemberSignature Language="VB.NET" Value="IdOnly" />
+      <MemberSignature Language="C++ CLI" Value="IdOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="cc6f3-107">返回仅项目或文件夹的 id。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="cc6f3-107">Returns only the item or folder ID.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
