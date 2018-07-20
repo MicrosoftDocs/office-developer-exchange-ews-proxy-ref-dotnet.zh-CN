@@ -1,0 +1,437 @@
+<Type Name="AttachmentType" FullName="ExchangeWebServices.AttachmentType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="220b0e38b807f99ffe7a413769ebc0b7095779f2" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603214" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class AttachmentType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AttachmentType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.AttachmentType" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachmentType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachmentType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.FileAttachmentType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ItemAttachmentType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.AttachmentType" />类表示的附件。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.AttachmentType" />类可以表示文件或项目附件。<see cref="T:ExchangeWebServices.AttachmentType" />类是的基类型的<see cref="T:ExchangeWebServices.FileAttachmentType" />和<see cref="T:ExchangeWebServices.ItemAttachmentType" />类。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>下面的示例演示如何使用<see cref="T:ExchangeWebServices.FileAttachmentType" />和<see cref="T:ExchangeWebServices.ItemAttachmentType" />。这两种类型都源自<see cref="T:ExchangeWebServices.AttachmentType" />类。这两种类型添加到<see cref="P:ExchangeWebServices.CreateAttachmentType.Attachments" />属性<see cref="T:ExchangeWebServices.CreateAttachmentType" />类。本示例还演示如何使用<see cref="T:ExchangeWebServices.AttachmentType" />中<see cref="T:ExchangeWebServices.AttachmentInfoResponseMessageType" />对象。</para>
+      <code>static void CreateAttachment(ExchangeServiceBinding esb)
+{
+    // Create item attachment.
+    MessageType message = new MessageType();
+    message.Subject = "Example subject";
+    message.Importance = ImportanceChoicesType.Low;
+    message.ImportanceSpecified = true;
+
+    ItemAttachmentType itemAttach = new ItemAttachmentType();
+    itemAttach.Name = "Message Attachment Example";
+    itemAttach.Item = message;
+
+    // Create file attachment.
+    FileAttachmentType fileAttach = new FileAttachmentType();
+    fileAttach.Name = "filename.txt";
+    fileAttach.ContentType = "text/plain";
+
+    byte[] content;
+    using (FileStream fileStream = new FileStream("C:\\cas.txt",
+        FileMode.Open, FileAccess.Read))
+    {
+        content = new byte[fileStream.Length];
+        fileStream.Read(content, 0, content.Length);
+    }
+
+    fileAttach.Content = content;
+
+    // Create the CreateAttachment request.
+    CreateAttachmentTypereqCreateAttach = new CreateAttachmentType();
+
+    // Identify the item that will have the attachments.
+    ItemIdType item = new ItemIdType();
+    item.Id = "AAAlAE1BQG1h";
+    item.ChangeKey = "DwAAABYAAA"; 
+    
+    // Add the parent item to the request.
+    reqCreateAttach.ParentItemId = item;
+
+    // Add attachments to the request.
+    reqCreateAttach.Attachments = new AttachmentType[2];
+    reqCreateAttach.Attachments[0] = itemAttach;
+    reqCreateAttach.Attachments[1] = fileAttach;
+
+    try
+    {
+        CreateAttachmentResponseType resp = esb.CreateAttachment(reqCreateAttach);
+        ArrayOfResponseMessagesType aorit = resp.ResponseMessages;
+        ResponseMessageType[] rmta = aorit.Items;
+
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            if (rmt.ResponseClass == ResponseClassType.Success)
+            {
+                AttachmentInfoResponseMessageType airmt = rmt as AttachmentInfoResponseMessageType;
+                foreach (AttachmentType atch in airmt.Attachments)
+                {
+                    if (atch is ItemAttachmentType)
+                    {
+                        Console.WriteLine("Created item attachment");
+                    }
+                    else if (atch is FileAttachmentType)
+                    {
+                        Console.WriteLine("Created file attachment");
+                    }
+                    else
+                    {
+                        throw new Exception("Unknown attachment");
+                    }
+                }
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachmentType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.AttachmentType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachmentType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.AttachmentType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.AttachmentType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AttachmentIdType AttachmentId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.AttachmentIdType AttachmentId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.AttachmentId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentId As AttachmentIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::AttachmentIdType ^ AttachmentId { ExchangeWebServices::AttachmentIdType ^ get(); void set(ExchangeWebServices::AttachmentIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AttachmentIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.AttachmentId" />属性获取或设置该附件标识符。 此属性是可读写。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.AttachmentType.AttachmentId" />属性返回<see cref="T:ExchangeWebServices.AttachmentIdType" />，其中包含父项和附件的标识符。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentId">
+      <MemberSignature Language="C#" Value="public string ContentId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.ContentId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.ContentId" />属性获取或设置附件内容标识符。 此属性是可读写。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.AttachmentType.ContentId" />属性返回一个字符串，包含内容的标识符。</value>
+        <remarks>
+          <para>值<see cref="P:ExchangeWebServices.AttachmentType.ContentId" />可以设置为任何字符串值。应用程序可以使用<see cref="P:ExchangeWebServices.AttachmentType.ContentId" />属性来实现自己标识的机制。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLocation">
+      <MemberSignature Language="C#" Value="public string ContentLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentLocation" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.ContentLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentLocation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.ContentLocation" />属性获取或设置位置的附件的内容对应的统一资源标识符 (URI)。 此属性是只读的。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.AttachmentType.ContentLocation" />属性返回一个字符串，包含附件的内容的 URI。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.ContentType" />属性获取或设置一个值，描述多用途 Internet 邮件扩展 (MIME) 类型的附件内容。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.AttachmentType.ContentType" />属性返回一个 string 值，该值代表附件的内容类型。</value>
+        <remarks>
+          <para>以下是您可以设置此属性的字符串的一些示例：</para>
+          <list type="bullet">
+            <item>
+              <description>文本/纯</description>
+            </item>
+            <item>
+              <description>文本/xml</description>
+            </item>
+            <item>
+              <description>应用程序/八进制流</description>
+            </item>
+            <item>
+              <description>多部分/混合</description>
+            </item>
+            <item>
+              <description>image/jpeg</description>
+            </item>
+          </list>
+          <para>
+            <b>注意</b>： 这不是互斥的列表。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInline">
+      <MemberSignature Language="C#" Value="public bool IsInline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInline" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.IsInline" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInline { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.IsInline" />属性获取或设置一个 Boolean 值，该值指定附件是否出现在项目中的内嵌。</summary>
+        <value>值<see cref="P:ExchangeWebServices.AttachmentType.IsInline" />属性为<b>true</b> ，如果附件显示为内嵌;否则，值为<b>false</b>。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.AttachmentType.IsInline" />属性序列化为 SOAP 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInlineSpecified">
+      <MemberSignature Language="C#" Value="public bool IsInlineSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInlineSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInlineSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInlineSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.AttachmentType.IsInline" />属性序列化为 SOAP 请求。 此属性是只读的。</summary>
+        <value>值<see cref="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" />属性为<b>true</b> ，如果<see cref="P:ExchangeWebServices.AttachmentType.IsInline" />到 SOAP 请求; 序列化属性否则，值为<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedTime">
+      <MemberSignature Language="C#" Value="public DateTime LastModifiedTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModifiedTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.LastModifiedTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModifiedTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" />属性获取日期时间值，该值指定上次修改附件。</summary>
+        <value>值<see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" />属性是 DateTime 对象。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" />属性序列化为 SOAP 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedTimeSpecified">
+      <MemberSignature Language="C#" Value="public bool LastModifiedTimeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LastModifiedTimeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTimeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LastModifiedTimeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" />属性序列化为 SOAP 请求。 此属性是只读的。</summary>
+        <value>值<see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" />属性为<b>true</b> ，如果<see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" />到 SOAP 请求; 序列化属性否则，值为<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.Name" />属性获取或设置的附件的名称。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.AttachmentType.Name" />属性返回一个 string 值，该值代表附件的名称。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.Size" />属性获取或设置一个代表以字节为单位的附件的大小的整数值。</summary>
+        <value>值<see cref="P:ExchangeWebServices.AttachmentType.Size" />属性为整数类型的值，该值代表以字节为单位的附件的大小。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.AttachmentType.Size" />属性序列化为 SOAP 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeSpecified">
+      <MemberSignature Language="C#" Value="public bool SizeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SizeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.SizeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SizeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" />属性序列化为 SOAP 请求。 此属性是只读的。</summary>
+        <value>值<see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" />属性为<b>true</b> ，如果<see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" />到 SOAP 请求; 序列化属性否则，值为<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

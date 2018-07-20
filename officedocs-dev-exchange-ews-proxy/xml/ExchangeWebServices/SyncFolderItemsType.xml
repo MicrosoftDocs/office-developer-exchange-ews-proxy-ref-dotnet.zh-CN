@@ -1,0 +1,344 @@
+<Type Name="SyncFolderItemsType" FullName="ExchangeWebServices.SyncFolderItemsType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c80e6bf2d4b9aff8e865e7cf06ab59bb705dac76" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602693" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SyncFolderItemsType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SyncFolderItemsType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SyncFolderItemsType" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncFolderItemsType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyncFolderItemsType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.SyncFolderItemsType" />类表示与运行 Microsoft Exchange Server 2007 的计算机同步文件夹中的项目的请求。</summary>
+    <remarks>
+      <para>若要同步的文件夹层次结构，请使用<see cref="T:ExchangeWebServices.SyncFolderHierarchyType" />代理对象。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>下面的示例演示如何同步收件箱文件夹中的项目。因为<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncState" />属性设置之前, 已同步文件夹中的项目。此 SyncFolderItems 操作将返回所有由同步调用以来已进行的更改<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncState" />属性。此呼叫将返回最多 100 个项目，由其项目标识符和其主题字段中，如果适用。此外请注意此呼叫将忽略的单个项。</para>
+      <code>static void SyncFolderItems(ExchangeServiceBinding esb)
+{ 
+    // Create the request.
+    SyncFolderItemsType &lt;span class="label"&gt;request&lt;/span&gt; = new SyncFolderItemsType();
+
+    // Identify the properties that are synchronized.
+    ItemResponseShapeType shape = new ItemResponseShapeType();
+    shape.BaseShape = DefaultShapeNamesType.IdOnly;
+    PathToUnindexedFieldType itemSubject = new PathToUnindexedFieldType();
+    itemSubject.FieldURI = UnindexedFieldURIType.itemSubject;
+    shape.AdditionalProperties = new BasePathToElementType[1];
+    shape.AdditionalProperties[0] = itemSubject;
+    
+    // Add the synchronized properties to the request.
+    &lt;span class="label"&gt;request&lt;/span&gt;.ItemShape = shape;
+
+    // Define the maximum number of changes returned in the response.
+    &lt;span class="label"&gt;request&lt;/span&gt;.MaxChangesReturned = 100;
+
+    // Identify the folder to synchronize.
+    DistinguishedFolderIdType inbox = new DistinguishedFolderIdType();
+    inbox.Id = DistinguishedFolderIdNameType.inbox;
+    &lt;span class="label"&gt;request&lt;/span&gt;.SyncFolderId = new TargetFolderIdType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.SyncFolderId.Item = inbox;
+
+    // Add the synchronization state to the request.
+    &lt;span class="label"&gt;request&lt;/span&gt;.SyncState = "wQ3YnacHwN3pRYZFQ1jv7HwSZzl/z/wESqUej1h8AAA==";
+
+    // Identify which items should not be synchronized.
+    &lt;span class="label"&gt;request&lt;/span&gt;.Ignore = new ItemIdType[1];
+    &lt;span class="label"&gt;request&lt;/span&gt;.Ignore[0] = new ItemIdType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.Ignore[0].Id = "AAAlAE1BQG1haW5lcmNvbnRvc";
+    &lt;span class="label"&gt;request&lt;/span&gt;.Ignore[0].ChangeKey = "CQAAABYAAAAMoHzy8/QATr21qKEgNudZAG6ns+MG";
+
+    // Send the request and get the response.
+    SyncFolderItemsResponseType response = esb.SyncFolderItems(&lt;span class="label"&gt;request&lt;/span&gt;);
+
+    ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+    ResponseMessageType[] rmta = aormt.Items;
+
+    if (rmta[0].ResponseClass == ResponseClassType.Success)
+    {
+        // Cast the response message to the appropriate type.
+        SyncFolderItemsResponseMessageType sfirmt = rmta[0] as SyncFolderItemsResponseMessageType;
+
+        // Get the sync state string to use in later synchronization calls.
+        string syncState = sfirmt.SyncState;
+
+        // Get the array of changes that are returned in the response.
+        SyncFolderItemsChangesType changeArray = sfirmt.Changes;
+
+        // This contains the array of item changes.
+        object[] changes = changeArray.Items;
+
+        // This identifies the type of change that occurred on an item.
+        ItemsChoiceType2 changeType;
+
+        for (int count = 0; count &amp;lt; changes.Length; count++)
+        { 
+            // This identifies the type of change that is represented by the objects
+            // in the changes object[].
+            changeType = changeArray.ItemsElementName[count];
+
+            // Check for the change type of each folder that is returned in the response.
+            switch (changeType)
+            {
+                case ItemsChoiceType2.Create:
+                    SyncFolderItemsCreateOrUpdateType createdItem = changes[count] as SyncFolderItemsCreateOrUpdateType;
+                    // TODO: Handle the created item.
+                    if (createdItem.Item is TaskType)
+                    {
+                        // TODO: Cast to task item and handle properties.
+                    }
+                    else;
+                    // TODO: Check and cast for MeetingCancellationMessageType, MeetingResponseMessageType,
+                    // MeetingRequestMessageType, MeetingMessageType, DistributionListType, ContactItemType,
+                    // CalendarItemType, MessageType, or ItemType types.
+                    break;
+
+                case ItemsChoiceType2.Update:
+                    SyncFolderItemsCreateOrUpdateType updatedItem = changes[count] as SyncFolderItemsCreateOrUpdateType;
+                    // TODO: Handle the updated item.
+                    // TODO: Check and cast to one of the 10 item types.
+                    break;
+
+                case ItemsChoiceType2.ReadFlagChange:
+                    SyncFolderItemsCreateOrUpdateType changeReadFlag = changes[count] as SyncFolderItemsCreateOrUpdateType;
+                    // TODO: Check and cast to one of the 10 item types.
+                    // TODO: Update the read flag on the local item.
+                    break;
+                case ItemsChoiceType2.Delete:
+                    SyncFolderItemsDeleteType deletedItem = changes[count] as SyncFolderItemsDeleteType;
+                    // TODO: Get the identifier of the deleted item.
+                    break;
+            }
+        }
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyncFolderItemsType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SyncFolderItemsType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFolderItemsType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.SyncFolderItemsType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.SyncFolderItemsType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ignore">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemIdType[] Ignore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemIdType[] Ignore" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsType.Ignore" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ignore As ItemIdType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::ItemIdType ^&gt; ^ Ignore { cli::array &lt;ExchangeWebServices::ItemIdType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::ItemIdType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ItemId", IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemIdType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.Ignore" />属性获取或设置的数组项以跳过的同步。 此属性是可选的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.Ignore" />属性返回<see cref="T:ExchangeWebServices.ItemIdType" />数组。</value>
+        <remarks>
+          <para>项标识符和更改密钥所需的每个已跳过的项目。否则，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemShape">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemResponseShapeType ItemShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemResponseShapeType ItemShape" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsType.ItemShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemShape As ItemResponseShapeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemResponseShapeType ^ ItemShape { ExchangeWebServices::ItemResponseShapeType ^ get(); void set(ExchangeWebServices::ItemResponseShapeType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemResponseShapeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.ItemShape" />属性获取或设置介绍哪些属性返回的响应中的形状。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.ItemShape" />属性返回<see cref="T:ExchangeWebServices.ItemResponseShapeType" />数组。</value>
+        <remarks>
+          <para>每个项返回的潜在属性因项类型。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxChangesReturned">
+      <MemberSignature Language="C#" Value="public int MaxChangesReturned { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxChangesReturned" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsType.MaxChangesReturned" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxChangesReturned As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxChangesReturned { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.MaxChangesReturned" />属性获取或设置可以同步响应中返回的更改的最大数量。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.MaxChangesReturned" />属性返回一个整数。</value>
+        <remarks>
+          <para>此属性的值必须是介于 1 和 512，非独占之间。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncFolderId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TargetFolderIdType SyncFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TargetFolderIdType SyncFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsType.SyncFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncFolderId As TargetFolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::TargetFolderIdType ^ SyncFolderId { ExchangeWebServices::TargetFolderIdType ^ get(); void set(ExchangeWebServices::TargetFolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TargetFolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncFolderId" />属性获取或设置的文件夹，包含要同步的项的标识。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncFolderId" /> 属性返回 <see cref="T:ExchangeWebServices.TargetFolderIdType" /> 对象。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncScope">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SyncFolderItemsScopeType SyncScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.SyncFolderItemsScopeType SyncScope" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsType.SyncScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncScope As SyncFolderItemsScopeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SyncFolderItemsScopeType SyncScope { ExchangeWebServices::SyncFolderItemsScopeType get(); void set(ExchangeWebServices::SyncFolderItemsScopeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SyncFolderItemsScopeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScope" />属性获取或设置一个<see cref="T:ExchangeWebServices.SyncFolderItemsScopeType" />同步响应中返回指定项目或项目和文件夹关联的信息的枚举值。</summary>
+        <value>值<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScope" />属性是一个<see cref="T:ExchangeWebServices.SyncFolderItemsScopeType" />枚举值。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScopeSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScope" />属性序列化为 SOAP 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncScopeSpecified">
+      <MemberSignature Language="C#" Value="public bool SyncScopeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SyncScopeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsType.SyncScopeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncScopeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SyncScopeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScopeSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScope" />属性序列化为 SOAP 请求。 此属性是必需的如果<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScope" />指定属性。</summary>
+        <value>值<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScopeSpecified" />属性为<b>true</b> ，如果<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncScope" />到 SOAP 请求; 序列化属性否则，值为<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncState">
+      <MemberSignature Language="C#" Value="public string SyncState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SyncState" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsType.SyncState" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncState As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SyncState { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncState" />属性获取或设置的同步状态标识符。 此属性是可选需要注意的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncState" /> 属性返回一个字符串。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncState" />属性包含一个字符串，表示的同步状态标识符。此标识符表示水印描述上次同步后已更改的项目的类型。执行第一次同步调用时，此属性是可选的。第一次调用返回<see cref="P:ExchangeWebServices.SyncFolderItemsResponseMessageType.SyncState" />的响应中。返回<see cref="P:ExchangeWebServices.SyncFolderItemsResponseMessageType.SyncState" />更高版本 SyncFolderItems 呼叫中用于同步的一套自上次同步调用以来发生的更改。因此，<see cref="P:ExchangeWebServices.SyncFolderItemsType.SyncState" />属性是必需的增量同步呼叫。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

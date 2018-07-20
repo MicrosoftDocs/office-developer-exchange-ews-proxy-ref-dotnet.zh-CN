@@ -1,0 +1,187 @@
+<Type Name="GetDelegateType" FullName="ExchangeWebServices.GetDelegateType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="356b43ad0bba06fed96e51c560d45c13ecc9417d" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603258" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class GetDelegateType : ExchangeWebServices.BaseDelegateType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GetDelegateType extends ExchangeWebServices.BaseDelegateType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.GetDelegateType" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetDelegateType&#xA;Inherits BaseDelegateType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetDelegateType : ExchangeWebServices::BaseDelegateType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseDelegateType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.GetDelegateType" />类表示一个请求以获取 Exchange 数据库中的邮箱的代理设置。</summary>
+    <remarks>To be added.</remarks>
+    <example>
+      <para>下面的示例演示如何检索所有 user1 的邮箱设置的代理人的代理设置。在响应中返回的每个用户的所有权限。</para>
+      <code>static void GetDelegate()
+{
+    // Set the version, credentials, and the Client Access server on ExchangeServiceBinding.
+    ExchangeServiceBinding esb = new ExchangeServiceBinding();
+    esb.RequestServerVersionValue = new RequestServerVersion();
+    esb.RequestServerVersionValue.Version = ExchangeVersionType.Exchange2007_SP1;
+    esb.Credentials = new NetworkCredential("username", "password", "domain");
+    esb.Url = "https://FQDN/ews/exchange.asmx";
+
+    // Create the request.
+    GetDelegateType request = new GetDelegateType();
+
+    // Identify the mailbox for which to retrieve delegate settings.
+    request.Mailbox = new EmailAddressType();
+    request.Mailbox.EmailAddress = "user1@example.com";
+    request.IncludePermissions = true;
+
+    try
+    {
+        // Send the GetDelegate request and get the response.
+        GetDelegateResponseMessageType response = esb.GetDelegate(request);
+        DelegateUserResponseMessageType[] durmt = new DelegateUserResponseMessageType[] { };
+        if (response.ResponseMessages != null)
+        {
+            durmt = response.ResponseMessages;
+        }
+        else
+        {
+            Console.WriteLine("There are no delegates for " + request.Mailbox.EmailAddress);
+        }
+
+        // Check each response message.
+        foreach (DelegateUserResponseMessageType resp in durmt)
+        {
+            if (resp.ResponseClass == ResponseClassType.Success)
+            {
+                DelegateUserType dut = resp.DelegateUser;
+                Console.WriteLine("=====================");
+                Console.WriteLine("Delegate user's display name: " + dut.UserId.DisplayName);
+                Console.WriteLine("Primary SMTP address: " + dut.UserId.PrimarySmtpAddress);
+                Console.WriteLine("Calendar folder permission level: " + dut.DelegatePermissions.CalendarFolderPermissionLevel.ToString());
+                Console.WriteLine("Contacts folder permission level: " + dut.DelegatePermissions.ContactsFolderPermissionLevel.ToString());
+                Console.WriteLine("Journal folder permission level: " + dut.DelegatePermissions.JournalFolderPermissionLevel.ToString());
+                Console.WriteLine("Delegate user receives copies of meeting messages? " + dut.ReceiveCopiesOfMeetingMessages.ToString());
+                Console.WriteLine("Delegate user can view private items? " + dut.ViewPrivateItems);
+            }
+            else if (resp.ResponseClass == ResponseClassType.Error)
+            {
+                Console.WriteLine("Error: " + resp.MessageText);
+            }
+            else
+                Console.WriteLine("Warning: " + resp.MessageText);
+        }
+
+        //Identify who receives meeting requests.
+        Console.WriteLine("=====================");
+        Console.WriteLine("Meeting requests are delivered to: " + response.DeliverMeetingRequests.ToString());
+        Console.ReadLine();
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+        Console.ReadLine();
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GetDelegateType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.GetDelegateType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetDelegateType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.GetDelegateType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.GetDelegateType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludePermissions">
+      <MemberSignature Language="C#" Value="public bool IncludePermissions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludePermissions" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetDelegateType.IncludePermissions" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludePermissions As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludePermissions { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetDelegateType.IncludePermissions" />属性获取或设置一个 Boolean 值，指定是否在响应中包含权限设置的代理人。</summary>
+        <value>
+          <b>IncludePermissions</b>属性返回值为<b>true</b> ，如果权限设置包含在响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserIds">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.UserIdType[] UserIds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.UserIdType[] UserIds" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetDelegateType.UserIds" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserIds As UserIdType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::UserIdType ^&gt; ^ UserIds { cli::array &lt;ExchangeWebServices::UserIdType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::UserIdType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("UserId", IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.UserIdType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetDelegateType.UserIds" />属性获取或设置<see cref="T:ExchangeWebServices.UserIdType" />数组，表示要获取邮箱中的代理人。</summary>
+        <value>
+          <b>Userid</b>属性返回<see cref="T:ExchangeWebServices.UserIdType" />数组，表示要获取邮箱中的代理人。</value>
+        <remarks>
+          <para>如果<b>UserIds</b>未设置简单对象访问协议 (SOAP) 请求中，将在响应中返回指定的邮箱中的所有代理人的信息。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

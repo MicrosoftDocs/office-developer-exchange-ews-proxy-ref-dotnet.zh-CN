@@ -1,0 +1,499 @@
+<Type Name="ManagedFolderInformationType" FullName="ExchangeWebServices.ManagedFolderInformationType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="07c41d06f0257c13937dbec0ffeb83337807c4a0" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602406" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ManagedFolderInformationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagedFolderInformationType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ManagedFolderInformationType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedFolderInformationType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagedFolderInformationType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ManagedFolderInformationType" />类包含有关托管自定义文件夹的信息。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.ManagedFolderInformationType" />属性是只读的。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagedFolderInformationType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ManagedFolderInformationType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagedFolderInformationType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.ManagedFolderInformationType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.ManagedFolderInformationType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDelete">
+      <MemberSignature Language="C#" Value="public bool CanDelete { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDelete" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanDelete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanDelete { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" />属性获取一个值，该值指示是否可以由客户端删除的托管的文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" />属性返回<b>true</b>如果可以删除的托管的文件夹;否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDeleteSpecified">
+      <MemberSignature Language="C#" Value="public bool CanDeleteSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDeleteSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanDeleteSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanDeleteSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanDeleteSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDeleteSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" />SOAP 响应中返回的属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDeleteSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" />属性已序列化为的 SOAP 响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRenameOrMove">
+      <MemberSignature Language="C#" Value="public bool CanRenameOrMove { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRenameOrMove" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanRenameOrMove As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRenameOrMove { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" />属性获取一个值，该值指示是否可以重命名或移动客户端托管的文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" />属性返回<b>true</b>如果可以重命名或移动; 托管的文件夹否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRenameOrMoveSpecified">
+      <MemberSignature Language="C#" Value="public bool CanRenameOrMoveSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRenameOrMoveSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMoveSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanRenameOrMoveSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRenameOrMoveSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMoveSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" />SOAP 响应中返回的属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMoveSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" />属性已序列化为 SOAP 响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.Comment" />属性获取与托管文件夹关联的注释。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.Comment" />属性返回一个字符串，表示与托管文件夹关联的注释。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSize">
+      <MemberSignature Language="C#" Value="public int FolderSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FolderSize" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property FolderSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FolderSize { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" />属性获取一个值，它介绍了托管文件夹中的所有内容的总大小。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" />属性返回一个整数，描述托管文件夹的总大小。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSizeSpecified">
+      <MemberSignature Language="C#" Value="public bool FolderSizeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FolderSizeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.FolderSizeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property FolderSizeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FolderSizeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSizeSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" />SOAP 响应中返回的属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSizeSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" />属性已序列化为 SOAP 响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasQuota">
+      <MemberSignature Language="C#" Value="public bool HasQuota { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasQuota" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasQuota As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasQuota { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" />属性获取一个值，该值指示托管的文件夹是否具有配额。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" />属性返回<b>true</b>如果托管的文件夹具有配额;否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasQuotaSpecified">
+      <MemberSignature Language="C#" Value="public bool HasQuotaSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasQuotaSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.HasQuotaSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasQuotaSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasQuotaSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuotaSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" />SOAP 响应中返回的属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuotaSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" />属性已序列化为的 SOAP 响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HomePage">
+      <MemberSignature Language="C#" Value="public string HomePage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HomePage" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.HomePage" />
+      <MemberSignature Language="VB.NET" Value="Public Property HomePage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HomePage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HomePage" />属性获取是托管文件夹的默认主页的 URL。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HomePage" />属性返回的 URL。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManagedFoldersRoot">
+      <MemberSignature Language="C#" Value="public bool IsManagedFoldersRoot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsManagedFoldersRoot" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsManagedFoldersRoot As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsManagedFoldersRoot { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" />属性获取一个 Boolean 值，该值指示是否托管的文件夹是根托管的文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" />属性返回<b>true</b>如果托管的文件夹是根托管的文件夹;否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManagedFoldersRootSpecified">
+      <MemberSignature Language="C#" Value="public bool IsManagedFoldersRootSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsManagedFoldersRootSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRootSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsManagedFoldersRootSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsManagedFoldersRootSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRootSpecified" />属性获取一个 Boolean 值，该值指示是否<see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" />SOAP 响应中返回的属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRootSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" />属性已序列化为的 SOAP 响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedFolderId">
+      <MemberSignature Language="C#" Value="public string ManagedFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ManagedFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.ManagedFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManagedFolderId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManagedFolderId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.ManagedFolderId" />属性获取托管文件夹的标识符。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.ManagedFolderId" />属性返回一个字符串，表示托管文件夹的标识符。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MustDisplayComment">
+      <MemberSignature Language="C#" Value="public bool MustDisplayComment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MustDisplayComment" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" />
+      <MemberSignature Language="VB.NET" Value="Public Property MustDisplayComment As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustDisplayComment { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" />属性获取一个值，该值指示是否必须显示托管的文件夹注释。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" />属性返回<b>true</b>如果必须显示托管的文件夹注释;否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MustDisplayCommentSpecified">
+      <MemberSignature Language="C#" Value="public bool MustDisplayCommentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MustDisplayCommentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayCommentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MustDisplayCommentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustDisplayCommentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayCommentSpecified" />属性获取一个值，指定是否<see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" />属性已序列化为的 SOAP 响应。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayCommentSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" />属性已序列化为的 SOAP 响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageQuota">
+      <MemberSignature Language="C#" Value="public int StorageQuota { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StorageQuota" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageQuota As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StorageQuota { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" />属性获取存储配额，托管文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" />属性返回一个整数，表示托管文件夹的存储配额。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageQuotaSpecified">
+      <MemberSignature Language="C#" Value="public bool StorageQuotaSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StorageQuotaSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuotaSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageQuotaSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StorageQuotaSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuotaSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" />SOAP 响应中返回的属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuotaSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" />属性已序列化为的 SOAP 响应;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

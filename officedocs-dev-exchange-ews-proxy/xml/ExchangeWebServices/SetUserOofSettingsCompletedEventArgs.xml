@@ -1,0 +1,63 @@
+<Type Name="SetUserOofSettingsCompletedEventArgs" FullName="ExchangeWebServices.SetUserOofSettingsCompletedEventArgs">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="73acae95da8c865e9f96a46508fa84cddf6aab97" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602487" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SetUserOofSettingsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SetUserOofSettingsCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SetUserOofSettingsCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SetUserOofSettingsCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SetUserOofSettingsCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.SetUserOofSettingsCompletedEventArgs" />类提供数据<see cref="E:ExchangeWebServices.ExchangeServiceBinding.SetUserOofSettingsCompleted" />事件。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SetUserOofSettingsResponse Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SetUserOofSettingsResponse Result" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SetUserOofSettingsCompletedEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As SetUserOofSettingsResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SetUserOofSettingsResponse ^ Result { ExchangeWebServices::SetUserOofSettingsResponse ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SetUserOofSettingsResponse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SetUserOofSettingsCompletedEventArgs.Result" />属性获取从异步调用的响应<see cref="M:ExchangeWebServices.ExchangeServiceBinding.SetUserOofSettingsAsync(ExchangeWebServices.SetUserOofSettingsRequest)" />方法。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SetUserOofSettingsCompletedEventArgs.Result" />属性返回<see cref="T:ExchangeWebServices.SetUserOofSettingsResponse" />对象，其中包含对的异步调用的结果<see cref="M:ExchangeWebServices.ExchangeServiceBinding.SetUserOofSettingsAsync(ExchangeWebServices.SetUserOofSettingsRequest)" />方法。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

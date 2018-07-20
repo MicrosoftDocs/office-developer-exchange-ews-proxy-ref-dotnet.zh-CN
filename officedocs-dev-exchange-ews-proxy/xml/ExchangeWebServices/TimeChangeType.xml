@@ -1,0 +1,177 @@
+<Type Name="TimeChangeType" FullName="ExchangeWebServices.TimeChangeType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e06fac2537f7b71aae9e06f32cfc549a56e52c9e" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602030" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class TimeChangeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TimeChangeType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.TimeChangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Class TimeChangeType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimeChangeType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.TimeChangeType" />类表示的日期和时间时更改夏时制和标准时间之间的时间。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TimeChangeType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.TimeChangeType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeChangeType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.TimeChangeType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.TimeChangeType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.TimeChangeType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("AbsoluteDate", typeof(System.DateTime), DataType="date")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("RelativeYearlyRecurrence", typeof(ExchangeWebServices.RelativeYearlyRecurrencePatternType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.TimeChangeType.Item" />属性获取或设置一个值，该值代表时间夏时制标准时间之间的更改时的日期。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.TimeChangeType.Item" />属性返回一个 object，表示时间夏时制标准时间之间的更改时的日期。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.TimeChangeType.Item" />属性可以设置使用<see cref="T:ExchangeWebServices.RelativeYearlyRecurrencePatternType" />对象或代表 xs: date 类型的字符串。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public string Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Offset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.TimeChangeType.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Offset { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="duration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.TimeChangeType.Offset" />属性获取或设置中的偏移量<see cref="P:ExchangeWebServices.TimeZoneType.BaseOffset" />。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.TimeChangeType.Offset" />属性返回一个 string 类型值，该值代表持续时间对象。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="public DateTime Time { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Time" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.TimeChangeType.Time" />
+      <MemberSignature Language="VB.NET" Value="Public Property Time As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Time { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="time")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.TimeChangeType.Time" />属性获取或设置当时间更改标准时间和夏时制之间的时间。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.TimeChangeType.Time" />属性获取代表时间夏时制标准时间之间的更改时的时间的 DateTime 对象。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeZoneName">
+      <MemberSignature Language="C#" Value="public string TimeZoneName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TimeZoneName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.TimeChangeType.TimeZoneName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeZoneName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeZoneName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.TimeChangeType.TimeZoneName" />属性获取或设置一个值，该值代表所在的时区名称。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.TimeChangeType.TimeZoneName" />属性返回一个 string 类型值，该值代表时区名称。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,172 @@
+<Type Name="UserOofSettings" FullName="ExchangeWebServices.UserOofSettings">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="12556c4d328adbe11363bed629a138a236bfe358" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602033" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class UserOofSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UserOofSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.UserOofSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserOofSettings" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserOofSettings" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.UserOofSettings" />类将指定外出 (oof) 用户设置。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserOofSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.UserOofSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserOofSettings();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.UserOofSettings" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.UserOofSettings" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.Duration Duration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.Duration Duration" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserOofSettings.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duration As Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::Duration ^ Duration { ExchangeWebServices::Duration ^ get(); void set(ExchangeWebServices::Duration ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.Duration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.UserOofSettings.Duration" />属性获取或设置一个值，指定如果为其启用外出 (oof) 状态的持续时间<see cref="P:ExchangeWebServices.UserOofSettings.OofState" />属性设置为<see cref="F:ExchangeWebServices.OofState.Scheduled" />。 如果<see cref="P:ExchangeWebServices.UserOofSettings.OofState" />属性设置为<see cref="F:ExchangeWebServices.OofState.Enabled" />或<see cref="F:ExchangeWebServices.OofState.Disabled" />，则会忽略此属性的值。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.UserOofSettings.Duration" />属性返回<see cref="T:ExchangeWebServices.Duration" />对象，其中包含的开始时间和结束时间应为其启用 OOF 设置。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalAudience">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ExternalAudience ExternalAudience { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ExternalAudience ExternalAudience" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserOofSettings.ExternalAudience" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalAudience As ExternalAudience" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ExternalAudience ExternalAudience { ExchangeWebServices::ExternalAudience get(); void set(ExchangeWebServices::ExternalAudience value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ExternalAudience</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.UserOofSettings.ExternalAudience" />属性获取或设置一个值，指定消息发送到其外部外出 (OOF)。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.UserOofSettings.ExternalAudience" />属性返回<see cref="T:ExchangeWebServices.ExternalAudience" />枚举值，该值指定向其发送外部 OOF 邮件。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalReply">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ReplyBody ExternalReply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ReplyBody ExternalReply" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserOofSettings.ExternalReply" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalReply As ReplyBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ReplyBody ^ ExternalReply { ExchangeWebServices::ReplyBody ^ get(); void set(ExchangeWebServices::ReplyBody ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ReplyBody</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.UserOofSettings.ExternalReply" />属性获取或设置外出 (oof) 消息发送到外部收件人的域或受信任的域的地址。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.UserOofSettings.ExternalReply" />属性返回<see cref="T:ExchangeWebServices.ReplyBody" />对象，其中包含 OOF 邮件发送至外部地址。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalReply">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ReplyBody InternalReply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ReplyBody InternalReply" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserOofSettings.InternalReply" />
+      <MemberSignature Language="VB.NET" Value="Public Property InternalReply As ReplyBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ReplyBody ^ InternalReply { ExchangeWebServices::ReplyBody ^ get(); void set(ExchangeWebServices::ReplyBody ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ReplyBody</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.UserOofSettings.InternalReply" />属性获取或设置外出 (oof) 消息发送到其他收件人的域或受信任的域中的地址。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.UserOofSettings.InternalReply" />属性返回<see cref="T:ExchangeWebServices.ReplyBody" />对象，其中包含 OOF 邮件发送到内部地址。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OofState">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.OofState OofState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.OofState OofState" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserOofSettings.OofState" />
+      <MemberSignature Language="VB.NET" Value="Public Property OofState As OofState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::OofState OofState { ExchangeWebServices::OofState get(); void set(ExchangeWebServices::OofState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.OofState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.UserOofSettings.OofState" />属性获取或设置外出 (oof) 状态的邮箱用户。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.UserOofSettings.OofState" />属性返回其中一个<see cref="T:ExchangeWebServices.OofState" />指示邮箱用户的 OOF 状态的枚举值。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

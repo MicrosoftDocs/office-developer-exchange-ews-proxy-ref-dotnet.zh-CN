@@ -1,0 +1,114 @@
+<Type Name="ExchangeImpersonationType" FullName="ExchangeWebServices.ExchangeImpersonationType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6259f9caff164411bf4d54a64a7a0863bf045b61" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603022" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ExchangeImpersonationType : System.Web.Services.Protocols.SoapHeader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ExchangeImpersonationType extends System.Web.Services.Protocols.SoapHeader" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ExchangeImpersonationType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExchangeImpersonationType&#xA;Inherits SoapHeader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExchangeImpersonationType : System::Web::Services::Protocols::SoapHeader" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.SoapHeader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlRoot("ExchangeImpersonation", IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>实例<see cref="T:ExchangeWebServices.ExchangeImpersonationType" />类作为 SOAP 标头的请求。 存在此实例时，呼叫者模拟帐户中所含的<see cref="T:ExchangeWebServices.ExchangeImpersonationType" />实例。</summary>
+    <remarks>
+      <para>调用帐户必须具有<b>ms exch 模拟</b>客户端访问服务器和<b>ms-exch MayImpersonate</b>上右右上也包含要模拟的邮箱的邮箱数据库或 Active Directory 用户/联系人对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExchangeImpersonationType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ExchangeImpersonationType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExchangeImpersonationType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.ExchangeImpersonationType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.ExchangeImpersonationType" />类型。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnyAttr">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute[] AnyAttr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttribute[] AnyAttr" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ExchangeImpersonationType.AnyAttr" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnyAttr As XmlAttribute()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ AnyAttr { cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ get(); void set(cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAnyAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlAttribute[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>返回<see cref="T:System.Xml.XmlAttribute" />。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectingSID">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ConnectingSIDType ConnectingSID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ConnectingSIDType ConnectingSID" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ExchangeImpersonationType.ConnectingSID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectingSID As ConnectingSIDType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ConnectingSIDType ^ ConnectingSID { ExchangeWebServices::ConnectingSIDType ^ get(); void set(ExchangeWebServices::ConnectingSIDType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ConnectingSIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ExchangeImpersonationType.ConnectingSID" />属性获取或设置用于模拟使用 ExchangeImpersonation SOAP 标头时的帐户。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ExchangeImpersonationType.ConnectingSID" />属性返回用于模拟的帐户。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,116 @@
+<Type Name="PathToIndexedFieldType" FullName="ExchangeWebServices.PathToIndexedFieldType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b1a2dad1aed196fdd5373eccf3311ef8707fc142" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603713" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class PathToIndexedFieldType : ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PathToIndexedFieldType extends ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.PathToIndexedFieldType" />
+  <TypeSignature Language="VB.NET" Value="Public Class PathToIndexedFieldType&#xA;Inherits BasePathToElementType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PathToIndexedFieldType : ExchangeWebServices::BasePathToElementType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePathToElementType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.PathToIndexedFieldType" />类标识字典中的各个成员。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PathToIndexedFieldType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.PathToIndexedFieldType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathToIndexedFieldType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.PathToIndexedFieldType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.PathToIndexedFieldType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldIndex">
+      <MemberSignature Language="C#" Value="public string FieldIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FieldIndex" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToIndexedFieldType.FieldIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldIndex As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldIndex { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.PathToIndexedFieldType.FieldIndex" />属性获取或设置对字典中的条目索引。 此属性是必需的。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.PathToIndexedFieldType.FieldIndex" />属性返回一个 string 类型值，该值代表由对字典中的条目索引<see cref="P:ExchangeWebServices.PathToIndexedFieldType.FieldURI" />属性。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldURI">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DictionaryURIType FieldURI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.DictionaryURIType FieldURI" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToIndexedFieldType.FieldURI" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldURI As DictionaryURIType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::DictionaryURIType FieldURI { ExchangeWebServices::DictionaryURIType get(); void set(ExchangeWebServices::DictionaryURIType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DictionaryURIType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.PathToIndexedFieldType.FieldURI" />属性获取或设置字典属性。 此属性是必需的。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.PathToIndexedFieldType.FieldURI" />属性返回<see cref="T:ExchangeWebServices.DictionaryURIType" />标识字典属性的枚举。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

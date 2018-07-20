@@ -1,0 +1,157 @@
+<Type Name="SubscribeType" FullName="ExchangeWebServices.SubscribeType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1cf8efecccc7ccb81b2a728a8011c7491eade2be" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602288" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SubscribeType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SubscribeType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SubscribeType" />
+  <TypeSignature Language="VB.NET" Value="Public Class SubscribeType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SubscribeType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.SubscribeType" />类表示订阅的 Exchange 数据库中的邮箱上的事件通知的请求。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.SubscribeType" />类用于推送和请求通知类型。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>以下代码示例演示如何创建请求通知订阅的监视收件箱和另一个文件夹。</para>
+      <para>收件箱由<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />类和其他文件夹由<see cref="T:ExchangeWebServices.FolderIdType" />类。这两个文件夹监控新电子邮件、 复制的项目、 移动项目、 修改项目、 创建项目，和已删除项目。订阅将超时时间，仅当 GetEvents 不调用的超时时间间隔内。</para>
+      <code>static void Subscribe(ExchangeServiceBinding esb)
+{
+    // Create the request.
+    SubscribeType &lt;span class="label"&gt;request&lt;/span&gt; = new SubscribeType();
+
+    // Identify the type of subscription.
+    PullSubscriptionRequestType pullSub = new PullSubscriptionRequestType();
+
+    // Identify the folders that are monitored for events.
+    DistinguishedFolderIdType inbox = new DistinguishedFolderIdType();
+    inbox.Id = DistinguishedFolderIdNameType.inbox;
+    FolderIdType customFolder = new FolderIdType();
+    customFolder.Id = "AQAlAE1=";
+    pullSub.FolderIds = new BaseFolderIdType[2] { inbox, customFolder };
+
+    // Identify the events that are monitored for the subscription.
+    pullSub.EventTypes = new NotificationEventTypeType[6]
+    {
+        NotificationEventTypeType.CopiedEvent,
+        NotificationEventTypeType.CreatedEvent,
+        NotificationEventTypeType.DeletedEvent,
+        NotificationEventTypeType.ModifiedEvent,
+        NotificationEventTypeType.MovedEvent,
+        NotificationEventTypeType.NewMailEvent
+    };
+
+    // Define the time-out period for the subscription (in minutes).
+    pullSub.Timeout = 10;
+
+    &lt;span class="label"&gt;request&lt;/span&gt;.Item = pullSub;
+
+    // Send the request and get the response.
+    SubscribeResponseType response = esb.Subscribe(&lt;span class="label"&gt;request&lt;/span&gt;);
+
+    ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+    ResponseMessageType[] rmta = aormt.Items;
+
+    foreach (ResponseMessageType rmt in rmta)
+    {
+        // Cast to the appropriate response.
+        SubscribeResponseMessageType respMsg = (rmt as SubscribeResponseMessageType);
+        
+        // Get the new subscription information.
+        if (respMsg.ResponseClass == ResponseClassType.Success)
+        {
+            Console.WriteLine("New subscription: " + respMsg.SubscriptionId);
+            Console.WriteLine("Watermark: " + respMsg.Watermark);
+        }
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SubscribeType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SubscribeType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SubscribeType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.SubscribeType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.SubscribeType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SubscribeType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("PushSubscriptionRequest", typeof(ExchangeWebServices.PushSubscriptionRequestType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("PullSubscriptionRequest", typeof(ExchangeWebServices.PullSubscriptionRequestType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("StreamingSubscriptionRequest", typeof(ExchangeWebServices.StreamingSubscriptionRequestType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SubscribeType.Item" />属性获取或设置的订阅类型。 此属性获取或设置之一<see cref="T:ExchangeWebServices.PullSubscriptionRequestType" />或<see cref="T:ExchangeWebServices.PushSubscriptionRequestType" />对象。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SubscribeType.Item" />属性返回<see cref="T:ExchangeWebServices.BaseSubscriptionRequestType" />对象，表示订阅类型。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.SubscribeType.Item" />属性可以设置使用<see cref="T:ExchangeWebServices.PullSubscriptionRequestType" />或<see cref="T:ExchangeWebServices.PushSubscriptionRequestType" />对象。这两种类型扩展<see cref="T:ExchangeWebServices.BaseSubscriptionRequestType" />，这是一个抽象类。有关使用这些对象为什么将设置此属性的详细信息，请参阅 XML 架构选项元素代理项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

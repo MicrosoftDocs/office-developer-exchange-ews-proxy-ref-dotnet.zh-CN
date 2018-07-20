@@ -1,0 +1,100 @@
+<Type Name="PathToUnindexedFieldType" FullName="ExchangeWebServices.PathToUnindexedFieldType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4c0bf06faa3bea53d2ba3c5934505d04b22224aa" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602173" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class PathToUnindexedFieldType : ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PathToUnindexedFieldType extends ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.PathToUnindexedFieldType" />
+  <TypeSignature Language="VB.NET" Value="Public Class PathToUnindexedFieldType&#xA;Inherits BasePathToElementType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PathToUnindexedFieldType : ExchangeWebServices::BasePathToElementType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePathToElementType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />类表示经常引用的属性。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />属性所引用的 Uri。</para>
+      <para>有关的示例，演示如何使用<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />类，请参阅<see cref="T:ExchangeWebServices.FindItemType" />。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PathToUnindexedFieldType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.PathToUnindexedFieldType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathToUnindexedFieldType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />类。</summary>
+        <remarks>
+          <para>有关示例，演示如何使用<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />类，请参阅<see cref="T:ExchangeWebServices.FindItemType" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldURI">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.UnindexedFieldURIType FieldURI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.UnindexedFieldURIType FieldURI" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldURI As UnindexedFieldURIType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::UnindexedFieldURIType FieldURI { ExchangeWebServices::UnindexedFieldURIType get(); void set(ExchangeWebServices::UnindexedFieldURIType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.UnindexedFieldURIType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" />属性获取或设置经常引用的字段 Uri。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" />属性返回<see cref="T:ExchangeWebServices.UnindexedFieldURIType" />标识 URI 的字段的枚举。</value>
+        <remarks>
+          <para>有关示例，演示如何使用<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />类，请参阅<see cref="T:ExchangeWebServices.FindItemType" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

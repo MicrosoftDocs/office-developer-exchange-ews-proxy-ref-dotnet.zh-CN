@@ -1,0 +1,106 @@
+<Type Name="SyncFolderItemsReadFlagType" FullName="ExchangeWebServices.SyncFolderItemsReadFlagType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="97d2556626b5005c86bab2efc2e3d628e50bcfbb" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602781" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SyncFolderItemsReadFlagType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SyncFolderItemsReadFlagType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SyncFolderItemsReadFlagType" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncFolderItemsReadFlagType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyncFolderItemsReadFlagType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.SyncFolderItemsReadFlagType" />类返回的属性为<see cref="T:ExchangeWebServices.SyncFolderItemsResponseMessageType" />实例项目读取后。 此类是在 Microsoft Exchange Server 2007 Service Pack 1 (SP1) 中引入的。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyncFolderItemsReadFlagType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SyncFolderItemsReadFlagType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFolderItemsReadFlagType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.SyncFolderItemsReadFlagType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.SyncFolderItemsReadFlagType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRead">
+      <MemberSignature Language="C#" Value="public bool IsRead { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRead" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsReadFlagType.IsRead" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRead As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRead { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsReadFlagType.IsRead" />属性获取或设置一个 Boolean 值，该值指示是否已将读取标志设置为<b>true</b>。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsReadFlagType.IsRead" />阅读该项目标志为<b>true</b>; 如果属性返回<b>true</b>否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemIdType ItemId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemIdType ItemId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsReadFlagType.ItemId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemId As ItemIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemIdType ^ ItemId { ExchangeWebServices::ItemIdType ^ get(); void set(ExchangeWebServices::ItemIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsReadFlagType.ItemId" />属性获取或设置已为其更改读取标志的项目的标识符。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsReadFlagType.ItemId" />属性返回已为其更改读取标志的项的项标识符。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

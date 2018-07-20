@@ -1,0 +1,116 @@
+<Type Name="CalendarItemTypeType" FullName="ExchangeWebServices.CalendarItemTypeType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d02f1709e1e3fc423b4e52f193db4b13104b7592" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602513" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum CalendarItemTypeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CalendarItemTypeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarItemTypeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CalendarItemTypeType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CalendarItemTypeType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CalendarItemTypeType" />枚举标识的日历项目的类型。</summary>
+    <remarks>
+      <para>此枚举由<see cref="P:ExchangeWebServices.CalendarItemType.CalendarItemType1" />属性<see cref="T:ExchangeWebServices.CalendarItemType" />对象和<see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />属性<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="Exception" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemTypeType Exception = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemTypeType.Exception" />
+      <MemberSignature Language="VB.NET" Value="Exception" />
+      <MemberSignature Language="C++ CLI" Value="Exception" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemTypeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>指定该项目是定期日历项目的例外。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Occurrence">
+      <MemberSignature Language="C#" Value="Occurrence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemTypeType Occurrence = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemTypeType.Occurrence" />
+      <MemberSignature Language="VB.NET" Value="Occurrence" />
+      <MemberSignature Language="C++ CLI" Value="Occurrence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemTypeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>指定该项目是定期日历项目的匹配项。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RecurringMaster">
+      <MemberSignature Language="C#" Value="RecurringMaster" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemTypeType RecurringMaster = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemTypeType.RecurringMaster" />
+      <MemberSignature Language="VB.NET" Value="RecurringMaster" />
+      <MemberSignature Language="C++ CLI" Value="RecurringMaster" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemTypeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>指定项目包含日历项目的定期模式的主控形状。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemTypeType Single = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemTypeType.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemTypeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>指定项目不是定期日历项目相关联。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

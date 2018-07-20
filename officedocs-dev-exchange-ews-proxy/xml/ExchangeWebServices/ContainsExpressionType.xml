@@ -1,0 +1,232 @@
+<Type Name="ContainsExpressionType" FullName="ExchangeWebServices.ContainsExpressionType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="818228c5e5b4c9b7dea55d770fa4a37371229704" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603578" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ContainsExpressionType : ExchangeWebServices.SearchExpressionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ContainsExpressionType extends ExchangeWebServices.SearchExpressionType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ContainsExpressionType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainsExpressionType&#xA;Inherits SearchExpressionType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContainsExpressionType : ExchangeWebServices::SearchExpressionType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.SearchExpressionType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ContainsExpressionType" />类表示一个搜索表达式，确定给定的属性是否包含提供常量的字符串值。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainsExpressionType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ContainsExpressionType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContainsExpressionType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.ContainsExpressionType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.ContainsExpressionType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Constant">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ConstantValueType Constant { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ConstantValueType Constant" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.Constant" />
+      <MemberSignature Language="VB.NET" Value="Public Property Constant As ConstantValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ConstantValueType ^ Constant { ExchangeWebServices::ConstantValueType ^ get(); void set(ExchangeWebServices::ConstantValueType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ConstantValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" />属性获取或设置一个值限制到的字段进行比较中。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" />属性返回<see cref="T:ExchangeWebServices.ConstantValueType" />，标识一个值，它将与字段的值进行比较。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentComparison">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ContainmentComparisonType ContainmentComparison { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ContainmentComparisonType ContainmentComparison" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentComparison As ContainmentComparisonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ContainmentComparisonType ContainmentComparison { ExchangeWebServices::ContainmentComparisonType get(); void set(ExchangeWebServices::ContainmentComparisonType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ContainmentComparisonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />属性获取或设置一个值，指定搜索忽略大小写和空格。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />属性返回<see cref="T:ExchangeWebServices.ContainmentComparisonType" />枚举。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />属性序列化为 SOAP 消息。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentComparisonSpecified">
+      <MemberSignature Language="C#" Value="public bool ContainmentComparisonSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContainmentComparisonSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentComparisonSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContainmentComparisonSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />属性序列化为 SOAP 消息。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />序列化为 SOAP 消息;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentMode">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ContainmentModeType ContainmentMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ContainmentModeType ContainmentMode" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentMode As ContainmentModeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ContainmentModeType ContainmentMode { ExchangeWebServices::ContainmentModeType get(); void set(ExchangeWebServices::ContainmentModeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ContainmentModeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />属性获取或设置一个值，标识的搜索字符串的边界。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />属性返回<see cref="T:ExchangeWebServices.ContainmentModeType" />标识的搜索字符串的边界的枚举。</value>
+        <remarks>
+          <para>包容模式如果未设置此属性，默认情况下使用 FullString。</para>
+          <para>必须设置<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />属性序列化为 SOAP 消息。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentModeSpecified">
+      <MemberSignature Language="C#" Value="public bool ContainmentModeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContainmentModeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentModeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContainmentModeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />属性序列化为 SOAP 消息。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />到 SOAP 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BasePathToElementType Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BasePathToElementType Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As BasePathToElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BasePathToElementType ^ Item { ExchangeWebServices::BasePathToElementType ^ get(); void set(ExchangeWebServices::BasePathToElementType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("FieldURI", typeof(ExchangeWebServices.PathToUnindexedFieldType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("IndexedFieldURI", typeof(ExchangeWebServices.PathToIndexedFieldType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("ExtendedFieldURI", typeof(ExchangeWebServices.PathToExtendedFieldType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BasePathToElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.Item" />属性代表的字段的搜索的字符串的<see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" />属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContainsExpressionType.Item" />属性返回<see cref="T:ExchangeWebServices.BasePathToElementType" />可表示<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />， <see cref="T:ExchangeWebServices.PathToIndexedFieldType" />，或<see cref="T:ExchangeWebServices.PathToExtendedFieldType" />对象。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,413 @@
+<Type Name="FindFolderParentType" FullName="ExchangeWebServices.FindFolderParentType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8d78d82fecfdb011e7d9e68b3348076e5eb12793" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602612" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FindFolderParentType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FindFolderParentType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FindFolderParentType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindFolderParentType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindFolderParentType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.FindFolderParentType" />类 FindFolder 操作过程中包含的单个根文件夹的搜索结果。</summary>
+    <remarks>
+      <para>A <see cref="T:ExchangeWebServices.FindFolderParentType" /> FindFolder 响应中返回对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FindFolderParentType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FindFolderParentType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindFolderParentType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.FindFolderParentType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.FindFolderParentType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominator">
+      <MemberSignature Language="C#" Value="public int AbsoluteDenominator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AbsoluteDenominator" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AbsoluteDenominator { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />属性获取的分母执行分数分页时用于下一个请求下, 一步为。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />属性返回一个整数值，该值代表下一个分母执行分数分页时用于下一个请求。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominatorSpecified">
+      <MemberSignature Language="C#" Value="public bool AbsoluteDenominatorSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominatorSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AbsoluteDenominatorSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominatorSpecified" />属性获取一个布尔值，指定是否<see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />属性已序列化为的 SOAP 响应。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominatorSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />到 SOAP 响应中; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Folders">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseFolderType[] Folders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseFolderType[] Folders" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.Folders" />
+      <MemberSignature Language="VB.NET" Value="Public Property Folders As BaseFolderType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ Folders { cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ContactsFolder", typeof(ExchangeWebServices.ContactsFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("TasksFolder", typeof(ExchangeWebServices.TasksFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("CalendarFolder", typeof(ExchangeWebServices.CalendarFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Folder", typeof(ExchangeWebServices.FolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("SearchFolder", typeof(ExchangeWebServices.SearchFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseFolderType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.Folders" />属性获取使用 FindFolder 操作找到的文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.Folders" />属性返回的数组<see cref="T:ExchangeWebServices.BaseFolderType" />对象。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+        <example>
+          <para>RootFolder (FindFolderResponseMessage)</para>
+          <para>
+            <see cref="T:ExchangeWebServices.FindFolderType" />
+          </para>
+          <para>FindFolder 操作</para>
+          <para>文件夹 [Ex15WebSvcsOtherRef]</para>
+          <para>查找文件夹</para>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRange">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRange" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRange { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />属性获取一个值，该值指示当前结果是否包含在查询中的最后一个文件夹，以便其他分页，则不需要。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />属性返回<b>true</b> ，如果当前结果包含在查询中; 的最后一个文件夹否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRangeSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRangeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRangeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRangeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRangeSpecified" />属性获取一个值，该值指示是否<see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />属性序列化为的 SOAP 响应。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRangeSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />到 SOAP 响应中; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffset">
+      <MemberSignature Language="C#" Value="public int IndexedPagingOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IndexedPagingOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndexedPagingOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />属性获取时使用索引的分页视图，则在下一个请求时应使用的下一个索引。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />属性返回一个整数，表示使用索引的分页视图时，则在下一个请求时应使用的下一个索引。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool IndexedPagingOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IndexedPagingOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffsetSpecified" />属性获取一个值，该值指示是否<see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />属性序列化为的 SOAP 响应。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffsetSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />到 SOAP 响应中; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffset">
+      <MemberSignature Language="C#" Value="public int NumeratorOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumeratorOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumeratorOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />属性表示要使用分数页面视图时使用的下一个请求的新分子值。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />属性返回一个整数，表示要使用分数页面视图时使用的下一个请求的新分子值。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool NumeratorOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NumeratorOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.NumeratorOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumeratorOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffsetSpecified" />属性获取一个值，该值指示是否<see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />属性序列化为的 SOAP 响应。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffsetSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />到 SOAP 响应中; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInView">
+      <MemberSignature Language="C#" Value="public int TotalItemsInView { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalItemsInView" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInView As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalItemsInView { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />属性获取文件夹超出限制的总数。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />属性返回一个整数，表示的总数超出限制的文件夹。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInViewSpecified">
+      <MemberSignature Language="C#" Value="public bool TotalItemsInViewSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TotalItemsInViewSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.TotalItemsInViewSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInViewSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TotalItemsInViewSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInViewSpecified" />属性获取一个值，该值指示是否<see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />属性序列化为的 SOAP 响应。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInViewSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />到 SOAP 响应中; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>
+          <para>此属性是只读的因为它仅返回的响应中。属性签名中的属性设置程序是代理生成器项目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

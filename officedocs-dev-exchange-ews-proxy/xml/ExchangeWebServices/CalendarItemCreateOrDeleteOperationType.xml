@@ -1,0 +1,96 @@
+<Type Name="CalendarItemCreateOrDeleteOperationType" FullName="ExchangeWebServices.CalendarItemCreateOrDeleteOperationType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4b6a73065f86326b9228c8fbeaad815520744678" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602031" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum CalendarItemCreateOrDeleteOperationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CalendarItemCreateOrDeleteOperationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CalendarItemCreateOrDeleteOperationType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CalendarItemCreateOrDeleteOperationType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" />枚举描述如何处理会议请求和取消通知。</summary>
+    <remarks>
+      <para>您可以确定该方法用于通过检查处理会议请求<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />属性。必须设置<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />属性序列化为 SOAP 请求。</para>您可以确定该方法用于处理通过检查会议取消的
+      <para><see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />属性。必须设置<see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />属性序列化为 SOAP 请求。</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SendOnlyToAll">
+      <MemberSignature Language="C#" Value="SendOnlyToAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendOnlyToAll = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType.SendOnlyToAll" />
+      <MemberSignature Language="VB.NET" Value="SendOnlyToAll" />
+      <MemberSignature Language="C++ CLI" Value="SendOnlyToAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>在 CreateItem 操作中，指定创建会议和会议请求发送给所有与会者，但没有会议请求的副本保存。 在删除项操作中，指定是否删除会议和会议取消邮件发送给所有与会者，但没有会议取消的副本保存。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToAllAndSaveCopy">
+      <MemberSignature Language="C#" Value="SendToAllAndSaveCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendToAllAndSaveCopy = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType.SendToAllAndSaveCopy" />
+      <MemberSignature Language="VB.NET" Value="SendToAllAndSaveCopy" />
+      <MemberSignature Language="C++ CLI" Value="SendToAllAndSaveCopy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>在 CreateItem 操作中，指定创建会议、 会议请求发送给所有与会者，并将会议请求的副本保存在已发送邮件文件夹中。 在删除项操作中，指定会议删除会议取消邮件发送给所有与会者，并在已发送邮件文件夹中保存一份会议取消。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToNone">
+      <MemberSignature Language="C#" Value="SendToNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendToNone = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType.SendToNone" />
+      <MemberSignature Language="VB.NET" Value="SendToNone" />
+      <MemberSignature Language="C++ CLI" Value="SendToNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>在 CreateItem 操作中，指定创建会议，但没有会议请求发送给与会者。 在删除项操作中，指定会议被删除但没有会议取消消息发送给与会者。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

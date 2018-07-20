@@ -1,0 +1,433 @@
+<Type Name="BasePermissionType" FullName="ExchangeWebServices.BasePermissionType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ad0ad610421585830788168fac86ed252f96fbf3" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602460" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public abstract class BasePermissionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit BasePermissionType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.BasePermissionType" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BasePermissionType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BasePermissionType abstract" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.CalendarPermissionType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.PermissionType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.BasePermissionType" />类是抽象类定义项和文件夹的基本权限。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BasePermissionType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.BasePermissionType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BasePermissionType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.BasePermissionType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.BasePermissionType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCreateItems">
+      <MemberSignature Language="C#" Value="public bool CanCreateItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateItems" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.CanCreateItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanCreateItems As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCreateItems { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateItems" />属性获取或设置一个 Boolean 值，指定客户端是否可以在一个文件夹中创建项目。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateItems" />属性返回<b>true</b> ，如果客户端可以在文件夹; 创建项目否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCreateItemsSpecified">
+      <MemberSignature Language="C#" Value="public bool CanCreateItemsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateItemsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.CanCreateItemsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanCreateItemsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCreateItemsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateItemsSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.BasePermissionType.CanCreateItems" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.BasePermissionType.CanCreateItems" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateItemsSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.BasePermissionType.CanCreateItems" />到 SOAP 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCreateSubFolders">
+      <MemberSignature Language="C#" Value="public bool CanCreateSubFolders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateSubFolders" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.CanCreateSubFolders" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanCreateSubFolders As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCreateSubFolders { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateSubFolders" />属性获取或设置一个 Boolean 值，指定客户端是否可以创建子文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateSubFolders" />属性返回<b>true</b>如果客户端可以创建子文件夹;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCreateSubFoldersSpecified">
+      <MemberSignature Language="C#" Value="public bool CanCreateSubFoldersSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateSubFoldersSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.CanCreateSubFoldersSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanCreateSubFoldersSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCreateSubFoldersSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateSubFoldersSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.BasePermissionType.CanCreateSubFolders" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.BasePermissionType.CanCreateSubFolders" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.CanCreateSubFoldersSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.BasePermissionType.CanCreateSubFolders" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteItems">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PermissionActionType DeleteItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.PermissionActionType DeleteItems" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.DeleteItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteItems As PermissionActionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::PermissionActionType DeleteItems { ExchangeWebServices::PermissionActionType get(); void set(ExchangeWebServices::PermissionActionType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PermissionActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.DeleteItems" />属性获取或设置一个值，指定客户端是否可以删除项目。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.DeleteItems" />属性返回其中一个<see cref="T:ExchangeWebServices.PermissionActionType" />指示客户端若要删除项所具有的权限的类型的枚举值。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteItemsSpecified">
+      <MemberSignature Language="C#" Value="public bool DeleteItemsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DeleteItemsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.DeleteItemsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteItemsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DeleteItemsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.DeleteItemsSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.BasePermissionType.DeleteItems" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.BasePermissionType.DeleteItems" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.DeleteItemsSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.BasePermissionType.DeleteItems" />到 SOAP 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditItems">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PermissionActionType EditItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.PermissionActionType EditItems" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.EditItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditItems As PermissionActionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::PermissionActionType EditItems { ExchangeWebServices::PermissionActionType get(); void set(ExchangeWebServices::PermissionActionType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PermissionActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.EditItems" />属性获取或设置一个值，指定客户端是否可以编辑的项目。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.EditItems" />属性返回其中一个<see cref="T:ExchangeWebServices.PermissionActionType" />指示的客户端有编辑项目的权限的类型的枚举值。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditItemsSpecified">
+      <MemberSignature Language="C#" Value="public bool EditItemsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EditItemsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.EditItemsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditItemsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EditItemsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.EditItemsSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.BasePermissionType.EditItems" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.BasePermissionType.EditItems" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.EditItemsSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.BasePermissionType.EditItems" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFolderContact">
+      <MemberSignature Language="C#" Value="public bool IsFolderContact { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFolderContact" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.IsFolderContact" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFolderContact As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFolderContact { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderContact" />属性获取或设置一个 Boolean 值，指定用户是否为文件夹的联系人。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderContact" />属性返回<b>true</b> ，如果用户为联系人文件夹中。否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFolderContactSpecified">
+      <MemberSignature Language="C#" Value="public bool IsFolderContactSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFolderContactSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.IsFolderContactSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFolderContactSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFolderContactSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderContactSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderContactSpecified" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderContact" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderContactSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderContact" />到 SOAP 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFolderOwner">
+      <MemberSignature Language="C#" Value="public bool IsFolderOwner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFolderOwner" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.IsFolderOwner" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFolderOwner As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFolderOwner { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderOwner" />属性获取或设置一个 Boolean 值，指定用户是否为文件夹的所有者。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderOwner" />属性返回<b>true</b>如果用户是文件夹所有者;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFolderOwnerSpecified">
+      <MemberSignature Language="C#" Value="public bool IsFolderOwnerSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFolderOwnerSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.IsFolderOwnerSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFolderOwnerSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFolderOwnerSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderOwnerSpecified" />属性返回一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderOwnerSpecified" />SOAP 消息中指定属性。 此属性是必需的如果<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderOwner" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderOwnerSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderOwner" />指定;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFolderVisible">
+      <MemberSignature Language="C#" Value="public bool IsFolderVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFolderVisible" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.IsFolderVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFolderVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFolderVisible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderVisible" />属性返回一个 Boolean 值，指定用户是否可以查看文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderVisible" />属性返回<b>true</b>如果用户可以查看文件夹。否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFolderVisibleSpecified">
+      <MemberSignature Language="C#" Value="public bool IsFolderVisibleSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFolderVisibleSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.IsFolderVisibleSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFolderVisibleSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFolderVisibleSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderVisibleSpecified" />属性返回一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderVisible" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderVisible" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.IsFolderVisibleSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.BasePermissionType.IsFolderVisible" />指定属性;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.UserIdType UserId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.UserIdType UserId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BasePermissionType.UserId" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserId As UserIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::UserIdType ^ UserId { ExchangeWebServices::UserIdType ^ get(); void set(ExchangeWebServices::UserIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.UserIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.BasePermissionType.UserId" />属性标识的用户或委派用户拥有文件夹访问权限。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.BasePermissionType.UserId" />属性返回<see cref="T:ExchangeWebServices.UserIdType" />标识的用户或委派用户拥有文件夹访问权限的实例。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

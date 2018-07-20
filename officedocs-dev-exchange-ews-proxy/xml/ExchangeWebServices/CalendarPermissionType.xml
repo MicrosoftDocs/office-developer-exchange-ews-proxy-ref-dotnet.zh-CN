@@ -1,0 +1,133 @@
+<Type Name="CalendarPermissionType" FullName="ExchangeWebServices.CalendarPermissionType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="33add65fd7257c6efe62c14076cd97b5da32505e" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602684" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CalendarPermissionType : ExchangeWebServices.BasePermissionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CalendarPermissionType extends ExchangeWebServices.BasePermissionType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarPermissionType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CalendarPermissionType&#xA;Inherits BasePermissionType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CalendarPermissionType : ExchangeWebServices::BasePermissionType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePermissionType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CalendarPermissionType" />类定义日历文件夹的用户具有访问权限。 此类是在 Microsoft Exchange Server 2007 Service Pack 1 (SP1) 中引入的。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CalendarPermissionType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CalendarPermissionType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarPermissionType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CalendarPermissionType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.CalendarPermissionType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarPermissionLevel">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarPermissionLevelType CalendarPermissionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.CalendarPermissionLevelType CalendarPermissionLevel" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarPermissionType.CalendarPermissionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarPermissionLevel As CalendarPermissionLevelType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarPermissionLevelType CalendarPermissionLevel { ExchangeWebServices::CalendarPermissionLevelType get(); void set(ExchangeWebServices::CalendarPermissionLevelType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarPermissionLevelType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarPermissionType.CalendarPermissionLevel" />属性获取或设置用户对日历文件夹的权限级别。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarPermissionType.CalendarPermissionLevel" />属性返回其中一个<see cref="T:ExchangeWebServices.CalendarPermissionLevelType" />枚举值指示对日历文件夹的用户的权限。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadItems">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarPermissionReadAccessType ReadItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.CalendarPermissionReadAccessType ReadItems" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarPermissionType.ReadItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadItems As CalendarPermissionReadAccessType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarPermissionReadAccessType ReadItems { ExchangeWebServices::CalendarPermissionReadAccessType get(); void set(ExchangeWebServices::CalendarPermissionReadAccessType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarPermissionReadAccessType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarPermissionType.ReadItems" />属性获取或设置一个值，指示用户是否可以读取日历文件夹中的项目。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarPermissionType.ReadItems" />属性返回其中一个<see cref="T:ExchangeWebServices.CalendarPermissionReadAccessType" />枚举值指示用户读取的日历文件夹的权限。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadItemsSpecified">
+      <MemberSignature Language="C#" Value="public bool ReadItemsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadItemsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarPermissionType.ReadItemsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadItemsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadItemsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarPermissionType.ReadItemsSpecified" />属性获取或设置一个 Boolean 值，该值指示是否<see cref="P:ExchangeWebServices.CalendarPermissionType.ReadItems" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.CalendarPermissionType.ReadItems" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarPermissionType.ReadItemsSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.CalendarPermissionType.ReadItems" />在 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

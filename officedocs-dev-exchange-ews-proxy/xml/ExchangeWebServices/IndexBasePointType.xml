@@ -1,0 +1,79 @@
+<Type Name="IndexBasePointType" FullName="ExchangeWebServices.IndexBasePointType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6e3e2b0b6dbe4b02e4439658cc3137033de424c9" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602414" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum IndexBasePointType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IndexBasePointType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.IndexBasePointType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IndexBasePointType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IndexBasePointType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.IndexBasePointType" />枚举指定项页是否将启动开头或结尾的使用的搜索条件找到项集。</summary>
+    <remarks>
+      <para>此枚举由<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />属性<see cref="T:ExchangeWebServices.IndexedPageViewType" />对象。</para>
+      <para>时要使用<see cref="F:ExchangeWebServices.IndexBasePointType.End" />值时，请注意，从末尾查找涉及将移至原点标识的偏移量。此外，将指针向后移动请求的记录数。例如，如果有 100 条记录，偏移量为 25 从末尾，从 75 开始搜索。如果返回了 10 条记录，10 个附加到 66 记录，并返回记录到 75 66 指针是向后移动。65 的下一个索引。从页面结尾的下一步偏移量为 100 减去 65，其等于 35。35 是从结束后，若要获取的已编制索引的下一页的下一步偏移量的值。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Beginning">
+      <MemberSignature Language="C#" Value="Beginning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IndexBasePointType Beginning = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IndexBasePointType.Beginning" />
+      <MemberSignature Language="VB.NET" Value="Beginning" />
+      <MemberSignature Language="C++ CLI" Value="Beginning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IndexBasePointType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>指定分页的视图从找到的项集的开头。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="End" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IndexBasePointType End = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IndexBasePointType.End" />
+      <MemberSignature Language="VB.NET" Value="End" />
+      <MemberSignature Language="C++ CLI" Value="End" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IndexBasePointType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>指定分页的视图启动找到的项集末尾。 始终从末尾查找往回搜索。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

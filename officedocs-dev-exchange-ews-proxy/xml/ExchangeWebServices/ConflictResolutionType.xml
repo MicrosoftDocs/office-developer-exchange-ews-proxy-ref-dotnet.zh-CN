@@ -1,0 +1,97 @@
+<Type Name="ConflictResolutionType" FullName="ExchangeWebServices.ConflictResolutionType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8d3b82cb6dd4f8a0d6f314137d4eac53f1d847e7" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603206" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum ConflictResolutionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ConflictResolutionType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ConflictResolutionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConflictResolutionType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConflictResolutionType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ConflictResolutionType" />枚举指定 UpdateItem 操作过程中如何处理冲突。</summary>
+    <remarks>
+      <para>此枚举由<see cref="P:ExchangeWebServices.UpdateItemType.ConflictResolution" />属性<see cref="T:ExchangeWebServices.UpdateItemType" />对象。当客户端尝试更新已设置的属性时，将发生冲突。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlwaysOverwrite">
+      <MemberSignature Language="C#" Value="AlwaysOverwrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ConflictResolutionType AlwaysOverwrite = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ConflictResolutionType.AlwaysOverwrite" />
+      <MemberSignature Language="VB.NET" Value="AlwaysOverwrite" />
+      <MemberSignature Language="C++ CLI" Value="AlwaysOverwrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ConflictResolutionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>如果没有冲突，UpdateItem 操作将覆盖信息。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoResolve">
+      <MemberSignature Language="C#" Value="AutoResolve" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ConflictResolutionType AutoResolve = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ConflictResolutionType.AutoResolve" />
+      <MemberSignature Language="VB.NET" Value="AutoResolve" />
+      <MemberSignature Language="C++ CLI" Value="AutoResolve" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ConflictResolutionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>UpdateItem 操作自动解决任何冲突。 自动解析选项在大多数情况下将覆盖现有的属性的值。 在某些情况下，则会忽略新值并保留原始值。 例如，用户 A Sensitivity 属性从 Normal 更改为 2 私有 3 机密。 然后用户 B 设置的值为 Public。 本示例中，将保留该机密设置和用户 B 的更新，则忽略。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeverOverwrite">
+      <MemberSignature Language="C#" Value="NeverOverwrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ConflictResolutionType NeverOverwrite = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ConflictResolutionType.NeverOverwrite" />
+      <MemberSignature Language="VB.NET" Value="NeverOverwrite" />
+      <MemberSignature Language="C++ CLI" Value="NeverOverwrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ConflictResolutionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>如果存在冲突，UpdateItem 操作将失败并返回一个错误。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

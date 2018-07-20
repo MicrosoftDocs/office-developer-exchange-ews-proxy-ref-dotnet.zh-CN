@@ -1,0 +1,122 @@
+<Type Name="ItemIdType" FullName="ExchangeWebServices.ItemIdType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="55cb410785f7820df9eb0351466915814848bd3e" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603800" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ItemIdType : ExchangeWebServices.BaseItemIdType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ItemIdType extends ExchangeWebServices.BaseItemIdType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ItemIdType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ItemIdType&#xA;Inherits BaseItemIdType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemIdType : ExchangeWebServices::BaseItemIdType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseItemIdType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.RecurringMasterItemIdRangesType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ItemIdType" />类表示 Exchange 邮箱中的项目的项标识符。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemIdType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ItemIdType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemIdType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.ItemIdType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.ItemIdType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeKey">
+      <MemberSignature Language="C#" Value="public string ChangeKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChangeKey" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemIdType.ChangeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChangeKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemIdType.ChangeKey" />属性获取或设置项的更改键。 此属性是可选的基于使用它的上下文。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemIdType.ChangeKey" />属性返回一个字符串，表示项的更改键。</value>
+        <remarks>
+          <para>标识项目的版本所需的更改密钥时，此属性是必需的。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemIdType.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemIdType.Id" />属性获取或设置的项标识符。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemIdType.Id" />属性返回一个字符串，表示项的标识符。 <see cref="P:ExchangeWebServices.ItemIdType.Id" />属性区分大小写;因此，Id 之间的比较必须区分大小写或二进制。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,115 @@
+<Type Name="CopyFolderType" FullName="ExchangeWebServices.CopyFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="88ee590d4e12c1c39bc13649fc0790146110991a" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603583" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CopyFolderType : ExchangeWebServices.BaseMoveCopyFolderType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CopyFolderType extends ExchangeWebServices.BaseMoveCopyFolderType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CopyFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CopyFolderType&#xA;Inherits BaseMoveCopyFolderType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CopyFolderType : ExchangeWebServices::BaseMoveCopyFolderType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseMoveCopyFolderType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CopyFolderType" />类表示 Exchange 数据库中复制文件夹的操作。</summary>
+    <remarks>
+      <para>在相同的结构中维护内容时，该 CopyFolder 操作会复制文件夹及其所有内容。复制的文件夹将具有新的文件夹标识符，并且更改键。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>下面的代码示例演示如何将两个文件夹复制到目标文件夹，然后获取新文件夹标识符。</para>
+      <code>static void CopyFolder(ExchangeServiceBinding esb)
+{
+    // Identify the folders to copy.
+    FolderIdType folder1 = new FolderIdType();
+    FolderIdType folder2 = new FolderIdType();
+    folder1.Id = "AQAlAE1BQG1haW5";
+    folder2.Id = "AQAlAE1BQG1haW4";
+    FolderIdType[] folders = new FolderIdType[2] { folder1, folder2 };
+
+    // Identify the destination folder.
+    FolderIdType destFolder = new FolderIdType();
+    destFolder.Id = "AQAlAE1BQG1haW1";
+
+    // Form the copy folder request.
+    CopyFolderType &lt;span class="label"&gt;request&lt;/span&gt; = new CopyFolderType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.FolderIds = folders;
+    &lt;span class="label"&gt;request&lt;/span&gt;.ToFolderId = new TargetFolderIdType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.ToFolderId.Item = destFolder;
+
+    try
+    {
+        // Send the request and get the response.
+        CopyFolderResponseType response = esb.CopyFolder(&lt;span class="label"&gt;request&lt;/span&gt;);
+        ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+        ResponseMessageType[] rmta = aormt.Items;
+
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            if (rmt.ResponseClass == ResponseClassType.Success)
+            { 
+                foreach (BaseFolderType folder in (rmt as FolderInfoResponseMessageType).Folders)
+                {
+                    // Get the new folder ID and change key.
+                    FolderIdType identifier = folder.FolderId;
+                }
+            }
+            else
+            {
+                throw new Exception("Folder copy failed.");
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CopyFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CopyFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CopyFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CopyFolderType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.CopyFolderType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

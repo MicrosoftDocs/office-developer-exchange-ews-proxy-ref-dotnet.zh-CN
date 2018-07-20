@@ -1,0 +1,168 @@
+<Type Name="GroupAttendeeConflictData" FullName="ExchangeWebServices.GroupAttendeeConflictData">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8f72a7bd0e268e35198b2c1ab6d9273b215339dc" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603384" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class GroupAttendeeConflictData : ExchangeWebServices.AttendeeConflictData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GroupAttendeeConflictData extends ExchangeWebServices.AttendeeConflictData" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.GroupAttendeeConflictData" />
+  <TypeSignature Language="VB.NET" Value="Public Class GroupAttendeeConflictData&#xA;Inherits AttendeeConflictData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GroupAttendeeConflictData : ExchangeWebServices::AttendeeConflictData" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.AttendeeConflictData</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.GroupAttendeeConflictData" />类包含有关可用的用户数、 用户拥有冲突，数和不具有可用性信息通讯组列表中建议的会议时间的用户数的聚合冲突信息。</summary>
+    <remarks>
+      <para>A<see cref="T:ExchangeWebServices.GroupAttendeeConflictData" />对象是中存在<see cref="T:ExchangeWebServices.GetUserAvailabilityResponseType" />实例由返回<see cref="M:ExchangeWebServices.ExchangeServiceBinding.GetUserAvailability(ExchangeWebServices.GetUserAvailabilityRequestType)" />方法时请求对象中的与会者是解析为通讯组列表。</para>
+      <para>
+        <see cref="T:ExchangeWebServices.GroupAttendeeConflictData" />类的成员的通讯组列表标识三种状态： 可用、 冲突，或没有数据。通讯组列表扩展将支持多达 100 个成员;因此，最大值的<see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembers" />属性是 100。</para>
+      <para>通讯组列表扩展是递归。如果通讯组列表中包含子通讯组列表展开到超过 100 个成员的总列表成员身份，不会被展开子通讯组列表，并将计数为一个条目的<see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithNoData" />属性。如果可以展开子通讯组列表的总列表成员身份不会增加到超过 100 个成员，展开子通讯组列表和成员计数添加到的计数<see cref="T:ExchangeWebServices.GroupAttendeeConflictData" />类属性。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GroupAttendeeConflictData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.GroupAttendeeConflictData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GroupAttendeeConflictData();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.GroupAttendeeConflictData" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.GroupAttendeeConflictData" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfMembers">
+      <MemberSignature Language="C#" Value="public int NumberOfMembers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfMembers" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfMembers As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfMembers { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembers" />属性获取或设置通讯组列表中的用户、 资源和聊天室的数量。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembers" />属性返回通讯组列表中的用户、 资源和聊天室的数量。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfMembersAvailable">
+      <MemberSignature Language="C#" Value="public int NumberOfMembersAvailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfMembersAvailable" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfMembersAvailable As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfMembersAvailable { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersAvailable" />属性获取或设置供建议的会议的时间列表成员的通讯组数。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersAvailable" />属性返回数通讯组列表成员可建议的会议的时间。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersAvailable" />属性是其状态是其成员的数目<see cref="F:ExchangeWebServices.LegacyFreeBusyType.Free" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfMembersWithConflict">
+      <MemberSignature Language="C#" Value="public int NumberOfMembersWithConflict { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfMembersWithConflict" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithConflict" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfMembersWithConflict As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfMembersWithConflict { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithConflict" />属性获取或设置的建议的会议时间与有冲突列表成员的通讯组数。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithConflict" />属性返回数通讯组列表成员拥有建议的会议时间冲突。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithConflict" />属性是 availiblity 状态是其成员的数目<see cref="F:ExchangeWebServices.LegacyFreeBusyType.Busy" />， <see cref="F:ExchangeWebServices.LegacyFreeBusyType.OOF" />，或<see cref="F:ExchangeWebServices.LegacyFreeBusyType.Tentative" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfMembersWithNoData">
+      <MemberSignature Language="C#" Value="public int NumberOfMembersWithNoData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfMembersWithNoData" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithNoData" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfMembersWithNoData As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfMembersWithNoData { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithNoData" />属性获取或设置执行不发布忙/闲数据比较到建议的会议时间列表成员的通讯组数。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithNoData" />属性返回数通讯组列表成员执行不已发布忙/闲数据比较到建议的会议的时间。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.GroupAttendeeConflictData.NumberOfMembersWithNoData" />属性代表拥有的通讯组列表成员的数量<see cref="F:ExchangeWebServices.LegacyFreeBusyType.NoData" />状态，或其代表太大，要展开的通讯组列表的成员。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,89 @@
+<Type Name="EndDateRecurrenceRangeType" FullName="ExchangeWebServices.EndDateRecurrenceRangeType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="588c96b77865ca23d3bb4477f8bbf3547754c889" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602184" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class EndDateRecurrenceRangeType : ExchangeWebServices.RecurrenceRangeBaseType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EndDateRecurrenceRangeType extends ExchangeWebServices.RecurrenceRangeBaseType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.EndDateRecurrenceRangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Class EndDateRecurrenceRangeType&#xA;Inherits RecurrenceRangeBaseType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EndDateRecurrenceRangeType : ExchangeWebServices::RecurrenceRangeBaseType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.RecurrenceRangeBaseType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.EndDateRecurrenceRangeType" />类描述的开始日期和结束日期的项目定期模式。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndDateRecurrenceRangeType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.EndDateRecurrenceRangeType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EndDateRecurrenceRangeType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.EndDateRecurrenceRangeType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.EndDateRecurrenceRangeType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndDate">
+      <MemberSignature Language="C#" Value="public DateTime EndDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime EndDate" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EndDateRecurrenceRangeType.EndDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime EndDate { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="date")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.EndDateRecurrenceRangeType.EndDate" />属性获取或设置一个周期性任务或日历项的结束日期。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.EndDateRecurrenceRangeType.EndDate" />属性返回一个周期性任务或日历项的结束日期的日期/时间值。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

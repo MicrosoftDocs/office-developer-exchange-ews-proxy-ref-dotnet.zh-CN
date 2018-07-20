@@ -1,0 +1,75 @@
+<Type Name="AggregateType" FullName="ExchangeWebServices.AggregateType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="67c982f0bfa83b2b26e08b9919f24d48072c79ce" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603001" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum AggregateType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AggregateType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.AggregateType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AggregateType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AggregateType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.AggregateType" />枚举标识是否代表属性的最大或最小值用于组中的项进行排序。</summary>
+    <remarks>&lt;b0&gt;使用聚合组中的项进行排序，您必须标识用于排序组代表属性。使用&lt;b1&gt;&lt;/b1&gt;属性指定代表属性和&lt;b2&gt;&lt;/b2&gt;属性，以指示是否根据最大值或标识属性的最小值排序组。&lt;b3&gt;&lt;/b3&gt;属性值设置为以下项之一&lt;b4&gt;&lt;/b4&gt;枚举值：&lt;/b0&gt;&lt;b5&gt;&lt;b6&gt;&lt;b7&gt;&lt;b8&gt;&lt;b9&gt;&lt;b10&gt;&lt;b11&gt;&lt;/b11&gt;&lt;/b10&gt;&lt;/b9&gt;&lt;/b8&gt;&lt;/b7&gt;&lt;/b6&gt;&lt;/b5&gt;&lt;b12&gt;如果&lt;b13&gt;&lt;/b13&gt;属性设置为&lt;b14&gt;&lt;/b14&gt;，组的排序开头的最大值&lt;b15&gt;&lt;/b15&gt;属性。如果&lt;b16&gt;&lt;/b16&gt;属性设置为&lt;b17&gt;&lt;/b17&gt;，开头的最小值排序组&lt;b18&gt;&lt;/b18&gt;属性。&lt;/b12&gt;&lt;b19&gt;例如，如果要颁发 FindItem 分组查询分组发件人，但您想要为组进行排序，以便有最新的电子邮件的组位于顶部，您可以按发件人和 aggregate 分组在日期/时间接收的带有&lt;b20&gt;&lt;/b20&gt;属性 &lt; c21 &gt;。&lt;/b19&gt;&lt;b22&gt;&lt;/b22&gt;</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="Maximum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.AggregateType Maximum = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.AggregateType.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Maximum" />
+      <MemberSignature Language="C++ CLI" Value="Maximum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AggregateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>指示组的排序开头的最大值<see cref="P:ExchangeWebServices.GroupByType.AggregateOn" />属性。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="Minimum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.AggregateType Minimum = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.AggregateType.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Minimum" />
+      <MemberSignature Language="C++ CLI" Value="Minimum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AggregateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>指示组的排序开头的最小值<see cref="P:ExchangeWebServices.GroupByType.AggregateOn" />属性。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

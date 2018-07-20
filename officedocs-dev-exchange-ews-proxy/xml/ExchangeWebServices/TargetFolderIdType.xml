@@ -1,0 +1,113 @@
+<Type Name="TargetFolderIdType" FullName="ExchangeWebServices.TargetFolderIdType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="87db1663c51721e1ca936752c99e6dd467bbdb01" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602012" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class TargetFolderIdType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TargetFolderIdType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.TargetFolderIdType" />
+  <TypeSignature Language="VB.NET" Value="Public Class TargetFolderIdType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TargetFolderIdType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.UserConfigurationNameType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.TargetFolderIdType" />类表示用于创建、 保存、 复制、 移动或同步的项目或文件夹的操作的目标文件夹。</summary>
+    <remarks>
+      <para>此类是对容器<see cref="T:ExchangeWebServices.FolderIdType" />或<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />对象。这些类型之一设置<see cref="P:ExchangeWebServices.TargetFolderIdType.Item" />属性。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>下面的代码示例演示<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />上设置<see cref="P:ExchangeWebServices.TargetFolderIdType.Item" />属性。</para>
+      <code>// Identify the destination folder.
+DistinguishedFolderIdType destFolder = new DistinguishedFolderIdType();
+destFolder.Id = DistinguishedFolderIdNameType.inbox;
+
+// Form the copy item request.
+CopyItemType request = new CopyItemType();
+request.ItemIds = items;
+request.&lt;span class="label"&gt;ToFolderId&lt;/span&gt; = new &lt;span class="label"&gt;TargetFolderIdType&lt;/span&gt;();
+request.&lt;span class="label"&gt;ToFolderId&lt;/span&gt;.Item = destFolder;</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetFolderIdType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.TargetFolderIdType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetFolderIdType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.TargetFolderIdType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.TargetFolderIdType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseFolderIdType Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseFolderIdType Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.TargetFolderIdType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As BaseFolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BaseFolderIdType ^ Item { ExchangeWebServices::BaseFolderIdType ^ get(); void set(ExchangeWebServices::BaseFolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("DistinguishedFolderId", typeof(ExchangeWebServices.DistinguishedFolderIdType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("FolderId", typeof(ExchangeWebServices.FolderIdType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("AddressListId", typeof(ExchangeWebServices.AddressListIdType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseFolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.TargetFolderIdType.Item" />属性获取或设置目标文件夹的标识符。 将使用此属性设置<see cref="T:ExchangeWebServices.FolderIdType" />或<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />对象。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.TargetFolderIdType.Item" />属性获取或设置<see cref="T:ExchangeWebServices.BaseFolderIdType" />对象。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

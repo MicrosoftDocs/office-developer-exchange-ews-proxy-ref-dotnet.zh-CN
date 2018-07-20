@@ -1,0 +1,123 @@
+<Type Name="ArrayOfTransitionsType" FullName="ExchangeWebServices.ArrayOfTransitionsType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bc1aaf6d7d96233c4967516640812d1f359c9c07" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603665" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ArrayOfTransitionsType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ArrayOfTransitionsType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ArrayOfTransitionsType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayOfTransitionsType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayOfTransitionsType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ArrayOfTransitionsType" />类包含数组所在的时区转换。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayOfTransitionsType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ArrayOfTransitionsType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayOfTransitionsType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.ArrayOfTransitionsType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.ArrayOfTransitionsType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfTransitionsType.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ArrayOfTransitionsType.Id" />属性获取或设置时区定义的唯一标识符。</summary>
+        <value>值<see cref="P:ExchangeWebServices.ArrayOfTransitionsType.Id" />是一个字符串，表示所在的时区定义的唯一标识符。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TransitionType[] Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TransitionType[] Items" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfTransitionsType.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Property Items As TransitionType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::TransitionType ^&gt; ^ Items { cli::array &lt;ExchangeWebServices::TransitionType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::TransitionType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("RecurringDateTransition", typeof(ExchangeWebServices.RecurringDateTransitionType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("Transition", typeof(ExchangeWebServices.TransitionType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("RecurringDayTransition", typeof(ExchangeWebServices.RecurringDayTransitionType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("AbsoluteDateTransition", typeof(ExchangeWebServices.AbsoluteDateTransitionType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TransitionType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ArrayOfTransitionsType.Items" />属性获取或设置一个时区转换的数组。</summary>
+        <value>值<see cref="P:ExchangeWebServices.ArrayOfTransitionsType.Items" />属性是一个时区转换的数组。 所在的时区转换可能会<see cref="T:ExchangeWebServices.TransitionType" />， <see cref="T:ExchangeWebServices.AbsoluteDateTransitionType" />， <see cref="T:ExchangeWebServices.RecurringDateTransitionType" />，或<see cref="T:ExchangeWebServices.RecurringDayTransitionType" />对象。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

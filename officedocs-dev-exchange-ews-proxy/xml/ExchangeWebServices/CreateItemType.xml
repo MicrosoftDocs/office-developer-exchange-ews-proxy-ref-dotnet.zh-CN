@@ -1,0 +1,496 @@
+<Type Name="CreateItemType" FullName="ExchangeWebServices.CreateItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="70494162987b0fe844fa9cd849bab98bb5aefa79" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602040" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CreateItemType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CreateItemType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CreateItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CreateItemType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateItemType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CreateItemType" />类表示请求以创建的项目或响应对象。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.CreateItemType" />用于 Exchange 数据库中创建响应对象和项。下表介绍的项目和响应对象可以创建使用的<see cref="T:ExchangeWebServices.CreateItemType" />。</para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ItemType" />
+          </term>代表 Exchange 数据库中创建的泛型项。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.MessageType" />
+          </term>代表 Exchange 数据库中创建一封电子邮件。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.TaskType" />
+          </term>代表 Exchange 数据库中创建的任务。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ContactItemType" />
+          </term>代表 Exchange 数据库中创建一个联系人项目。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.CalendarItemType" />
+          </term>代表 Exchange 数据库中创建一个日历项。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.AcceptItemType" />
+          </term>表示接受会议邀请的响应对象。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.CancelCalendarItemType" />
+          </term>代表取消日历项目的响应对象。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.DeclineItemType" />
+          </term>表示拒绝会议邀请的响应对象。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ForwardItemType" />
+          </term>表示将项目转发给其他用户的响应对象。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.RemoveItemType" />
+          </term>代表响应对象的从日历中删除已取消的会议。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ReplyAllToItemType" />
+          </term>代表响应对象的答复项目的所有收件人。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ReplyToItemType" />
+          </term>代表答复的项目的发件人的响应对象。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.TentativelyAcceptItemType" />
+          </term>表示暂时接受会议邀请的响应对象。
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.SuppressReadReceiptType" />
+          </term>代表响应对象用来禁止显示已读的回执。
+        </item>
+      </list>
+      <para>
+        <b>注释</b>：<see cref="T:ExchangeWebServices.CreateItemType" />不能用于创建通讯组列表，会议邮件、 会议请求消息、 会议响应邮件和会议取消的邮件。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>下面的代码示例显示创建单个电子邮件，将其发送给多个收件人，并将它的一个副本保存在已发送邮件默认文件夹的 CreateItem 请求。</para>
+      <code>static void CreateEmail()
+{
+    // Create the CreateItem request.
+    CreateItemType createEmailRequest = new CreateItemType();
+
+    // Specifiy how the e-mail will be handled.
+    createEmailRequest.MessageDisposition = MessageDispositionType.SendAndSaveCopy;
+    createEmailRequest.MessageDispositionSpecified = true;
+
+    // Specify the location of sent items.
+    createEmailRequest.SavedItemFolderId = new TargetFolderIdType();
+    DistinguishedFolderIdType sentitems = new DistinguishedFolderIdType();
+    sentitems.Id = DistinguishedFolderIdNameType.sentitems;
+    createEmailRequest.SavedItemFolderId.Item = sentitems;
+
+    // Create the array of items.
+    createEmailRequest.Items = new NonEmptyArrayOfAllItemsType();
+
+    // Create a single e-mail message.
+    MessageType message = new MessageType();
+    message.Subject = "Daily Report";
+    message.Body = new BodyType();
+    message.Body.BodyType1 = BodyTypeType.Text;
+    message.Body.Value = "(1) Handled customer issues, (2) Saved the world.";
+    message.ItemClass = "IPM.Note";
+    message.Sender = new SingleRecipientType();
+    message.Sender.Item = new EmailAddressType();
+    message.Sender.Item.EmailAddress = "user1@example.com";
+    message.ToRecipients = new EmailAddressType[1];
+    message.ToRecipients[0] = new EmailAddressType();
+    message.ToRecipients[0].EmailAddress = "user2@example.com";
+    message.Sensitivity = SensitivityChoicesType.Normal;
+    message.SensitivitySpecified = true;
+    message.Importance = ImportanceChoicesType.High;
+    message.ImportanceSpecified = true;
+
+    // Add the message to the array of items to be created.
+    createEmailRequest.Items.Items = new ItemType[1];
+    createEmailRequest.Items.Items[0] = message;
+
+    try
+    {
+        // Create the service binding.
+        // Identify the service and the user.
+        ExchangeServiceBinding esb = new ExchangeServiceBinding();
+        esb.Credentials = new NetworkCredential("username", "password", "domain");
+        esb.Url = @"https://ExchangeServer.com/EWS/Exchange.asmx";
+
+        // Send a CreateItem request and get the CreateItem response.
+        CreateItemResponseType createItemResponse = esb.CreateItem(createEmailRequest);
+        ArrayOfResponseMessagesType responseMessages = createItemResponse.ResponseMessages;
+        
+        // Access the response message.
+        ResponseMessageType responseMessage = responseMessages.Items[0];
+        // Determine whether the request was a success.
+        if (responseMessages.Items[0].ResponseClass == ResponseClassType.Error)
+        {
+            throw new Exception(responseMessages.Items[0].MessageText);
+        }
+        if (responseMessage is ItemInfoResponseMessageType)
+        {
+            ItemInfoResponseMessageType createItemResp = (responseMessage as ItemInfoResponseMessageType);
+            ArrayOfRealItemsType aorit = createItemResp.Items;
+
+            // Determine whether there are items in response.
+            if (aorit.Items != null)
+            {
+                foreach (ItemType item in aorit.Items)
+                {
+                    if (item is ItemType)
+                    {
+                        ItemType myItem = (item as ItemType);
+                    }
+                    if (item is MessageType)
+                    {
+                        MessageType myMessage = (item as MessageType);
+                    }
+                    // TODO: Add logic to check and cast for all other types.
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine("Item(s) created");
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CreateItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CreateItemType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.CreateItemType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.NonEmptyArrayOfAllItemsType Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.NonEmptyArrayOfAllItemsType Items" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Property Items As NonEmptyArrayOfAllItemsType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ Items { ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ get(); void set(ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.NonEmptyArrayOfAllItemsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateItemType.Items" />属性获取或设置要创建的项集合。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateItemType.Items" />属性返回<see cref="T:ExchangeWebServices.NonEmptyArrayOfAllItemsType" />包含要创建的所有项的集合。</value>
+        <remarks>
+          <para>
+            <see cref="T:ExchangeWebServices.NonEmptyArrayOfAllItemsType" />集合可包含以下各项之一：</para>
+          <list type="bullet">
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.CalendarItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ContactItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.DistributionListType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingRequestMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingResponseMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingCancellationMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.TaskType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ReplyToItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ReplyAllToItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ForwardItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.AcceptItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.TentativelyAcceptItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.DeclineItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.CancelCalendarItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.RemoveItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.SuppressReadReceiptType" />
+              </description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageDisposition">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MessageDispositionType MessageDisposition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.MessageDispositionType MessageDisposition" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.MessageDisposition" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageDisposition As MessageDispositionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MessageDispositionType MessageDisposition { ExchangeWebServices::MessageDispositionType get(); void set(ExchangeWebServices::MessageDispositionType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MessageDispositionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" />属性获取或设置一个枚举，介绍了在创建后如何处理项目。 此属性是必需的电子邮件。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" />属性返回<see cref="T:ExchangeWebServices.MessageDispositionType" />枚举值，表示在创建后如何处理项目。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" />属性序列化为简单对象访问协议 (SOAP) 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageDispositionSpecified">
+      <MemberSignature Language="C#" Value="public bool MessageDispositionSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MessageDispositionSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageDispositionSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MessageDispositionSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" />属性序列化为简单对象访问协议 (SOAP) 请求。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" />到 SOAP 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SavedItemFolderId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TargetFolderIdType SavedItemFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TargetFolderIdType SavedItemFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.SavedItemFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SavedItemFolderId As TargetFolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::TargetFolderIdType ^ SavedItemFolderId { ExchangeWebServices::TargetFolderIdType ^ get(); void set(ExchangeWebServices::TargetFolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TargetFolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateItemType.SavedItemFolderId" />属性获取或设置在其中保存新项目的文件夹。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateItemType.SavedItemFolderId" />属性返回<see cref="T:ExchangeWebServices.TargetFolderIdType" />，标识的文件夹包含已保存的项目。</value>
+        <remarks>
+          <para>如果未设置此属性，则使用保存项目的默认文件夹。已保存的电子邮件将保存在默认的草稿文件夹。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMeetingInvitations">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendMeetingInvitations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendMeetingInvitations" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendMeetingInvitations As CalendarItemCreateOrDeleteOperationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarItemCreateOrDeleteOperationType SendMeetingInvitations { ExchangeWebServices::CalendarItemCreateOrDeleteOperationType get(); void set(ExchangeWebServices::CalendarItemCreateOrDeleteOperationType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />属性获取或设置一个枚举，介绍了在创建后如何处理会议请求。 此属性是必需的日历项目。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />属性返回<see cref="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" />枚举值，该值表示处理会议请求的方式。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />属性序列化为简单对象访问协议 (SOAP) 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMeetingInvitationsSpecified">
+      <MemberSignature Language="C#" Value="public bool SendMeetingInvitationsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SendMeetingInvitationsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendMeetingInvitationsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendMeetingInvitationsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />序列化为简单对象访问协议 (SOAP) 请求。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />到 SOAP 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

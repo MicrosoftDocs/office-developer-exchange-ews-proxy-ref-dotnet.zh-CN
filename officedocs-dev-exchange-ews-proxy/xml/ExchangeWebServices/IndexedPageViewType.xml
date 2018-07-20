@@ -1,0 +1,122 @@
+<Type Name="IndexedPageViewType" FullName="ExchangeWebServices.IndexedPageViewType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b7700a17e967a03a529b952201c8b697f3c9029c" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603189" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class IndexedPageViewType : ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IndexedPageViewType extends ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.IndexedPageViewType" />
+  <TypeSignature Language="VB.NET" Value="Public Class IndexedPageViewType&#xA;Inherits BasePagingType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndexedPageViewType : ExchangeWebServices::BasePagingType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePagingType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.IndexedPageViewType" />类描述如何分页的项信息 FindItem 或 FindFolder 请求返回。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndexedPageViewType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.IndexedPageViewType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexedPageViewType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.IndexedPageViewType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.IndexedPageViewType" />类型。</summary>
+        <remarks>
+          <para>从末尾查找涉及将移至由的原点<see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" />属性。此外，将指针向后移动请求的记录数。请求的记录数不会超过指定值<see cref="P:ExchangeWebServices.BasePagingType.MaxEntriesReturned" />属性。例如，如果有 100 条记录，偏移量为 25 从末尾，从 75 开始搜索。如果返回了 10 条记录，10 个附加到 65 记录，并返回记录到 75 65 指针是向后移动。下一个索引为 64。从页面结尾的下一步偏移量为 100 减 64，等于 36。36 是从结束后，若要获取的已编制索引的下一页的下一步偏移量的值。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasePoint">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.IndexBasePointType BasePoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.IndexBasePointType BasePoint" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePoint As IndexBasePointType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::IndexBasePointType BasePoint { ExchangeWebServices::IndexBasePointType get(); void set(ExchangeWebServices::IndexBasePointType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IndexBasePointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />属性获取或设置一个值，指定是否的项目页上将启动开头或结尾的使用的搜索条件找到项集。 此属性是必需的。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />属性返回<see cref="T:ExchangeWebServices.IndexBasePointType" />枚举值，该值指定是否的项目页上将启动开头或结尾的结果集。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.IndexedPageViewType.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" />属性获取或设置中的偏移量<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />属性。 此属性是必需的。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" />属性返回一个整数，表示从基本点的偏移量。</value>
+        <remarks>
+          <para>如果<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />属性等于<see cref="F:ExchangeWebServices.IndexBasePointType.Beginning" />，偏移量为正数。如果<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />属性等于<see cref="F:ExchangeWebServices.IndexBasePointType.End" />，就像负处理偏移量。这标识哪些项目将传递的响应中的第一项。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

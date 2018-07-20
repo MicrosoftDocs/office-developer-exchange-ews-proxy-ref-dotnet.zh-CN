@@ -1,0 +1,120 @@
+<Type Name="CreateManagedFolderRequestType" FullName="ExchangeWebServices.CreateManagedFolderRequestType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a1b88227f4363e3000fcf457328b3dc7721618a7" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602323" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CreateManagedFolderRequestType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CreateManagedFolderRequestType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CreateManagedFolderRequestType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CreateManagedFolderRequestType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateManagedFolderRequestType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CreateManagedFolderRequestType" />类表示的请求将托管的文件夹添加到邮箱。</summary>
+    <remarks>
+      <para>运行 Microsoft Exchange Server 2007 的计算机上创建托管的文件夹。若要以编程方式添加到邮箱的托管自定义文件夹，使用<see cref="T:ExchangeWebServices.CreateManagedFolderRequestType" />类。如果已使用 Exchange 管理控制台或 Exchange 命令行管理程序中定义了托管的文件夹，您可以仅添加托管的文件夹。CreateManagedFolder 操作创建基于 Active Directory 目录服务中已存在的托管的文件夹模板的托管文件夹的实例。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>有关如何使用的示例<see cref="T:ExchangeWebServices.CreateManagedFolderRequestType" />类，请参阅添加托管文件夹。有关演示如何实现从应用程序的托管的文件夹的完整示例，请参阅<a href="http://go.microsoft.com/fwlink/?LinkID=82742">托管文件夹选择器示例</a></para>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateManagedFolderRequestType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CreateManagedFolderRequestType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateManagedFolderRequestType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CreateManagedFolderRequestType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.CreateManagedFolderRequestType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderNames">
+      <MemberSignature Language="C#" Value="public string[] FolderNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] FolderNames" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateManagedFolderRequestType.FolderNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property FolderNames As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FolderNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FolderName", IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateManagedFolderRequestType.FolderNames" />属性获取或设置一个托管文件夹添加到邮箱的数组。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateManagedFolderRequestType.FolderNames" />属性返回一个字符串数组，包含要添加到邮箱的托管文件夹的名称。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mailbox">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType Mailbox { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType Mailbox" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateManagedFolderRequestType.Mailbox" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mailbox As EmailAddressType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EmailAddressType ^ Mailbox { ExchangeWebServices::EmailAddressType ^ get(); void set(ExchangeWebServices::EmailAddressType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CreateManagedFolderRequestType.Mailbox" />属性获取或设置在其中添加的托管的文件夹邮箱的电子邮件地址。 此属性是可选的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CreateManagedFolderRequestType.Mailbox" />属性返回<see cref="T:ExchangeWebServices.EmailAddressType" />对象。</value>
+        <remarks>
+          <para>在使用 Exchange 模拟时到另一个帐户添加邮箱时，此属性是必需的。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

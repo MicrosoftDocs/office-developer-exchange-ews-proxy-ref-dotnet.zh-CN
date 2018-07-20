@@ -1,0 +1,136 @@
+<Type Name="DayOfWeekIndexType" FullName="ExchangeWebServices.DayOfWeekIndexType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="00442a0fbe5ad9715144103cdd8a1f2ce87d496e" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603577" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum DayOfWeekIndexType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DayOfWeekIndexType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DayOfWeekIndexType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DayOfWeekIndexType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DayOfWeekIndexType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.DayOfWeekIndexType" />枚举描述一个月中的一周的相对定期模式中使用。</summary>
+    <remarks>
+      <para>可以确定检查每年定期模式中使用的天<see cref="P:ExchangeWebServices.RelativeYearlyRecurrencePatternType.DayOfWeekIndex" />属性<see cref="T:ExchangeWebServices.RelativeYearlyRecurrencePatternType" />附带类<see cref="P:ExchangeWebServices.RelativeYearlyRecurrencePatternType.Month" />属性。您可以确定一周中的每月定期模式使用通过检查<see cref="P:ExchangeWebServices.RelativeMonthlyRecurrencePatternType.DayOfWeekIndex" />属性<see cref="T:ExchangeWebServices.RelativeMonthlyRecurrencePatternType" />类。</para>
+      <para>如一个月的第二个星期一可能会出现在月的第三个星期。如果在某个星期五启动月，相应月份的第一周不包含星期一。因此的第一个星期一已发生第二个周，并且每月的第二个星期一出现在第三个星期。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="First" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType First = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.First" />
+      <MemberSignature Language="VB.NET" Value="First" />
+      <MemberSignature Language="C++ CLI" Value="First" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>指示一个月中的第一周定期模式中使用。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fourth">
+      <MemberSignature Language="C#" Value="Fourth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Fourth = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Fourth" />
+      <MemberSignature Language="VB.NET" Value="Fourth" />
+      <MemberSignature Language="C++ CLI" Value="Fourth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>指示定期模式中使用一个月中的第四个星期。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="Last" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Last = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Last" />
+      <MemberSignature Language="VB.NET" Value="Last" />
+      <MemberSignature Language="C++ CLI" Value="Last" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>指示一个月中的最后一周定期模式中使用。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Second">
+      <MemberSignature Language="C#" Value="Second" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Second = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Second" />
+      <MemberSignature Language="VB.NET" Value="Second" />
+      <MemberSignature Language="C++ CLI" Value="Second" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>指示一个月中的第二周定期模式中使用。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Third">
+      <MemberSignature Language="C#" Value="Third" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Third = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Third" />
+      <MemberSignature Language="VB.NET" Value="Third" />
+      <MemberSignature Language="C++ CLI" Value="Third" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>指示一个月中的第三周定期模式中使用。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

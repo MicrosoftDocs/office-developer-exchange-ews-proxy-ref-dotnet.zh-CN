@@ -1,0 +1,196 @@
+<Type Name="FreeBusyViewOptionsType" FullName="ExchangeWebServices.FreeBusyViewOptionsType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3303877939966757323073e7a5c896a2ad201eee" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602153" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FreeBusyViewOptionsType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FreeBusyViewOptionsType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FreeBusyViewOptionsType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FreeBusyViewOptionsType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FreeBusyViewOptionsType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.FreeBusyViewOptionsType" />类将指定的可用性查询的响应中返回的忙/闲信息的类型。</summary>
+    <remarks>
+      <para>A<see cref="T:ExchangeWebServices.FreeBusyViewOptionsType" />对象返回的<see cref="P:ExchangeWebServices.GetUserAvailabilityRequestType.FreeBusyViewOptions" />属性<see cref="T:ExchangeWebServices.GetUserAvailabilityRequestType" />对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FreeBusyViewOptionsType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FreeBusyViewOptionsType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FreeBusyViewOptionsType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.FreeBusyViewOptionsType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.FreeBusyViewOptionsType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergedFreeBusyIntervalInMinutes">
+      <MemberSignature Language="C#" Value="public int MergedFreeBusyIntervalInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MergedFreeBusyIntervalInMinutes" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergedFreeBusyIntervalInMinutes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MergedFreeBusyIntervalInMinutes { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutes" />属性获取或设置中的两个连续插槽之间的时差<see cref="F:ExchangeWebServices.FreeBusyViewType.FreeBusyMerged" />视图。 此属性是可选的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutes" />属性返回一个整数，表示时差以分钟为单位。</value>
+        <remarks>
+          <para>此属性的默认值为 30 分钟。六个分钟是最小间隔，一天 （1440 分钟） 是此属性的最大间隔值。仅当使用此值<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />属性设置为<see cref="F:ExchangeWebServices.FreeBusyViewType.MergedOnly" />， <see cref="F:ExchangeWebServices.FreeBusyViewType.FreeBusyMerged" />，或<see cref="F:ExchangeWebServices.FreeBusyViewType.DetailedMerged" />。返回包含此属性定义的间隔的流<see cref="P:ExchangeWebServices.FreeBusyView.MergedFreeBusy" />属性。</para>
+          <para>必须设置<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutesSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutes" />属性序列化为简单对象访问协议 (SOAP) 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergedFreeBusyIntervalInMinutesSpecified">
+      <MemberSignature Language="C#" Value="public bool MergedFreeBusyIntervalInMinutesSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MergedFreeBusyIntervalInMinutesSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutesSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergedFreeBusyIntervalInMinutesSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MergedFreeBusyIntervalInMinutesSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutesSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutes" />属性序列化为简单对象访问协议 (SOAP) 请求。 此属性是必需的如果<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutes" />属性设置。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutesSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.MergedFreeBusyIntervalInMinutes" />到简单对象访问协议 (SOAP) 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedView">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FreeBusyViewType RequestedView { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.FreeBusyViewType RequestedView" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestedView As FreeBusyViewType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FreeBusyViewType RequestedView { ExchangeWebServices::FreeBusyViewType get(); void set(ExchangeWebServices::FreeBusyViewType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FreeBusyViewType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />属性获取或设置的客户端请求的日历信息的类型。 此属性是可选的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />属性返回<see cref="T:ExchangeWebServices.FreeBusyViewType" />枚举值。</value>
+        <remarks>
+          <para>必须设置<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedViewSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />属性序列化为简单对象访问协议 (SOAP) 请求。</para>
+          <para>如果未设置此属性或<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedViewSpecified" />属性未设置，默认枚举值的<see cref="F:ExchangeWebServices.FreeBusyViewType.FreeBusy" />用于的视图。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedViewSpecified">
+      <MemberSignature Language="C#" Value="public bool RequestedViewSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequestedViewSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedViewSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestedViewSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequestedViewSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedViewSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />属性序列化为简单对象访问协议 (SOAP) 请求。 此属性是必需的如果<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />属性设置。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedViewSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />到简单对象访问协议 (SOAP) 请求; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeWindow">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.Duration TimeWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.Duration TimeWindow" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FreeBusyViewOptionsType.TimeWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeWindow As Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::Duration ^ TimeWindow { ExchangeWebServices::Duration ^ get(); void set(ExchangeWebServices::Duration ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.Duration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.TimeWindow" />属性获取或设置查询的用户的可用性信息的时间跨度。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.TimeWindow" /> 属性返回 <see cref="T:ExchangeWebServices.Duration" /> 对象。</value>
+        <remarks>
+          <para>以下时间段内的最大值为 42 天。可以修改此最大值。所有请求的用户的最大值超出的可用性信息将都返回错误。如果任何约会部分中所定义的时间跨度<see cref="P:ExchangeWebServices.Duration.StartTime" />和<see cref="P:ExchangeWebServices.Duration.EndTime" />属性<see cref="T:ExchangeWebServices.Duration" />对象，包含完整的约会。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

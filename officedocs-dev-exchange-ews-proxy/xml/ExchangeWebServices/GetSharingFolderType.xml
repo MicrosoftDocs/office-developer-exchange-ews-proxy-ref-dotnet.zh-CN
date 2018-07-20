@@ -1,0 +1,187 @@
+<Type Name="GetSharingFolderType" FullName="ExchangeWebServices.GetSharingFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="116a321855595547f8e2b52033350f58a541a8b7" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603122" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class GetSharingFolderType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GetSharingFolderType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.GetSharingFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetSharingFolderType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetSharingFolderType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.GetSharingFolderType" />类表示请求以获取指定的共享文件夹的本地文件夹标识符。</summary>
+    <remarks>To be added.</remarks>
+    <example>
+      <para>下面的代码示例演示如何获取指定的共享文件夹的本地文件夹标识符。本示例中，共享的文件夹是 user1@contoso.com 所拥有的日历文件夹。</para>
+      <code>static void GetSharingFolderTest(ExchangeServiceBinding esb)
+{
+    // Create the request.
+    GetSharingFolderType gsfRequest = new GetSharingFolderType();
+    
+    // Specify the SMTP address of the mailbox that contains the folder that is being shared.
+    gsfRequest.SmtpAddress = "user1@contoso.com";
+    
+    // Specify the type of data that is being shared.
+    gsfRequest.DataType = SharingDataType.Calendar;
+    gsfRequest.DataTypeSpecified = true; 
+    
+    try
+    {
+      // Send the request and get the response.
+      GetSharingFolderResponseMessageType gsfResponse = esb.GetSharingFolder(gsfRequest); 
+    }
+    catch (Exception e) 
+    {
+      Console.WriteLine(e.Message); 
+    }
+}
+</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GetSharingFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.GetSharingFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetSharingFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.GetSharingFolderType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.GetSharingFolderType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SharingDataType DataType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.SharingDataType DataType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataType As SharingDataType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SharingDataType DataType { ExchangeWebServices::SharingDataType get(); void set(ExchangeWebServices::SharingDataType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SharingDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />获取或设置<see cref="T:ExchangeWebServices.SharingDataType" />介绍的共享的共享文件夹的数据类型的枚举值。</summary>
+        <value>值<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />属性是一个<see cref="T:ExchangeWebServices.SharingDataType" />枚举值。</value>
+        <remarks>
+          <para>在<see cref="T:ExchangeWebServices.GetSharingFolderType" />请求，<see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" />属性必须设置。此外，或者<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />属性或<see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" />属性必须设置，但不是能同时。</para>
+          <para>如果您设置<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />属性，必须设置<see cref="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" />属性设置为<b>true</b> ，以便<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />属性序列化为 SOAP 请求。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool DataTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DataTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />属性序列化为 SOAP 请求。</summary>
+        <value>值<see cref="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" />属性为<b>true</b> ，如果<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />到 SOAP 请求; 序列化属性否则，值为<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharedFolderId">
+      <MemberSignature Language="C#" Value="public string SharedFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SharedFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SharedFolderId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharedFolderId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" />属性获取或设置一个 string 值，包含其本地文件夹标识符应返回的共享文件夹的唯一标识符。</summary>
+        <value>值<see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" />属性是一个字符串，包含的共享文件夹的唯一标识符。</value>
+        <remarks>
+          <para>在<see cref="T:ExchangeWebServices.GetSharingFolderType" />请求，<see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" />属性必须设置。此外，或者<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />属性或<see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" />属性必须设置，但不是能同时。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmtpAddress">
+      <MemberSignature Language="C#" Value="public string SmtpAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SmtpAddress" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmtpAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SmtpAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" />属性获取或设置中的共享的关系的另一方的 SMTP 电子邮件地址。</summary>
+        <value>值<see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" />属性是一个字符串，包含 SMTP 电子邮件地址。</value>
+        <remarks>
+          <para>在<see cref="T:ExchangeWebServices.GetSharingFolderType" />请求，<see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" />属性必须设置。此外，或者<see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" />属性或<see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" />属性必须设置，但不是能同时。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

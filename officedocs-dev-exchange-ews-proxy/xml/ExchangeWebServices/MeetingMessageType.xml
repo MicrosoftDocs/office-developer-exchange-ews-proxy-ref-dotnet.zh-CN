@@ -1,0 +1,454 @@
+<Type Name="MeetingMessageType" FullName="ExchangeWebServices.MeetingMessageType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="50b6c20360397a0cfe6ece27f8dc5fc1824b86cf" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602993" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class MeetingMessageType : ExchangeWebServices.MessageType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MeetingMessageType extends ExchangeWebServices.MessageType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.MeetingMessageType" />
+  <TypeSignature Language="VB.NET" Value="Public Class MeetingMessageType&#xA;Inherits MessageType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MeetingMessageType : ExchangeWebServices::MessageType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.MessageType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingRequestMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingCancellationMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingResponseMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.MeetingMessageType" />类表示 Exchange 存储中的会议。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MeetingMessageType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.MeetingMessageType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MeetingMessageType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.MeetingMessageType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.MeetingMessageType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssociatedCalendarItemId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemIdType AssociatedCalendarItemId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemIdType AssociatedCalendarItemId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.AssociatedCalendarItemId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssociatedCalendarItemId As ItemIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemIdType ^ AssociatedCalendarItemId { ExchangeWebServices::ItemIdType ^ get(); void set(ExchangeWebServices::ItemIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.AssociatedCalendarItemId" />属性获取或设置与此实例相关联的日历项目<see cref="T:ExchangeWebServices.MeetingMessageType" />类。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.AssociatedCalendarItemId" />属性返回的实例<see cref="T:ExchangeWebServices.ItemIdType" />，代表与此实例相关联的日历项目的类<see cref="T:ExchangeWebServices.MeetingMessageType" />类。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeStamp">
+      <MemberSignature Language="C#" Value="public DateTime DateTimeStamp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DateTimeStamp" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.DateTimeStamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeStamp As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateTimeStamp { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.DateTimeStamp" />属性获取或设置的日期和时间的创建会议。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.DateTimeStamp" />属性返回表示的日期和会议的创建时间的 DateTime 类的实例。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeStampSpecified">
+      <MemberSignature Language="C#" Value="public bool DateTimeStampSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DateTimeStampSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.DateTimeStampSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeStampSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DateTimeStampSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.DateTimeStampSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.MeetingMessageType.DateTimeStamp" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.MeetingMessageType.DateTimeStamp" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.DateTimeStampSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.MeetingMessageType.DateTimeStamp" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasBeenProcessed">
+      <MemberSignature Language="C#" Value="public bool HasBeenProcessed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasBeenProcessed" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessed" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasBeenProcessed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasBeenProcessed { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessed" />属性获取或设置一个 Boolean 值，该值指示是否会议邮件项已处理。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessed" />属性返回<b>true</b>如果会议邮件项已经处理;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasBeenProcessedSpecified">
+      <MemberSignature Language="C#" Value="public bool HasBeenProcessedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasBeenProcessedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasBeenProcessedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasBeenProcessedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessedSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessed" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessed" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessedSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.MeetingMessageType.HasBeenProcessed" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDelegated">
+      <MemberSignature Language="C#" Value="public bool IsDelegated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDelegated" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.IsDelegated" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDelegated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDelegated { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsDelegated" />属性获取或设置一个布尔值，该值指示是否会议已处理的具有代理访问的帐户。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsDelegated" />属性返回<b>true</b>如果会议已处理的代理访问; 使用的帐户否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDelegatedSpecified">
+      <MemberSignature Language="C#" Value="public bool IsDelegatedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDelegatedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.IsDelegatedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDelegatedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDelegatedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsDelegatedSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.MeetingMessageType.IsDelegated" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.MeetingMessageType.IsDelegated" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsDelegatedSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.MeetingMessageType.IsDelegated" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOrganizer">
+      <MemberSignature Language="C#" Value="public bool IsOrganizer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOrganizer" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.IsOrganizer" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOrganizer As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOrganizer { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOrganizerSpecified">
+      <MemberSignature Language="C#" Value="public bool IsOrganizerSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOrganizerSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.IsOrganizerSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOrganizerSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOrganizerSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOutOfDate">
+      <MemberSignature Language="C#" Value="public bool IsOutOfDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOutOfDate" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.IsOutOfDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOutOfDate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOutOfDate { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsOutOfDate" />属性获取或设置一个 Boolean 值，该值指示会议邮件是否过期。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsOutOfDate" />属性返回<b>true</b>如果会议消息已过期;否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOutOfDateSpecified">
+      <MemberSignature Language="C#" Value="public bool IsOutOfDateSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOutOfDateSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.IsOutOfDateSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOutOfDateSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOutOfDateSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsOutOfDateSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.MeetingMessageType.IsOutOfDate" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.MeetingMessageType.IsOutOfDate" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.IsOutOfDateSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.MeetingMessageType.IsOutOfDate" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecurrenceId">
+      <MemberSignature Language="C#" Value="public DateTime RecurrenceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime RecurrenceId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.RecurrenceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecurrenceId As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime RecurrenceId { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.RecurrenceId" />属性获取或设置与一起使用的 DateTime 值<see cref="P:ExchangeWebServices.MeetingMessageType.UID" />属性标识定期会议的特定实例。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.RecurrenceId" />属性返回与一起使用的 DateTime 类的实例<see cref="P:ExchangeWebServices.MeetingMessageType.UID" />属性标识定期会议的特定实例。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecurrenceIdSpecified">
+      <MemberSignature Language="C#" Value="public bool RecurrenceIdSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RecurrenceIdSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.RecurrenceIdSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecurrenceIdSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RecurrenceIdSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.RecurrenceIdSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.MeetingMessageType.RecurrenceId" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.MeetingMessageType.RecurrenceId" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.RecurrenceIdSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.MeetingMessageType.RecurrenceId" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ResponseTypeType ResponseType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ResponseTypeType ResponseType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.ResponseType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseType As ResponseTypeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ResponseTypeType ResponseType { ExchangeWebServices::ResponseTypeType get(); void set(ExchangeWebServices::ResponseTypeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ResponseTypeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.ResponseType" />属性获取或设置收件人会议接收的响应的类型。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.ResponseType" />属性返回的实例<see cref="T:ExchangeWebServices.ResponseTypeType" />类表示的收件人会议接收的响应的类型。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool ResponseTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ResponseTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.ResponseTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResponseTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.ResponseTypeSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.MeetingMessageType.ResponseType" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.MeetingMessageType.ResponseType" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.ResponseTypeSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.MeetingMessageType.ResponseType" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UID">
+      <MemberSignature Language="C#" Value="public string UID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UID" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingMessageType.UID" />
+      <MemberSignature Language="VB.NET" Value="Public Property UID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.UID" />属性获取或设置一个值，唯一地标识会议消息。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingMessageType.UID" />属性返回值，该值唯一地标识会议消息。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

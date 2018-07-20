@@ -1,0 +1,218 @@
+<Type Name="EmailAddressType" FullName="ExchangeWebServices.EmailAddressType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8c5a040f5f1fedeb973aa2508fbf673de185b62c" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603182" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class EmailAddressType : ExchangeWebServices.BaseEmailAddressType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EmailAddressType extends ExchangeWebServices.BaseEmailAddressType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.EmailAddressType" />
+  <TypeSignature Language="VB.NET" Value="Public Class EmailAddressType&#xA;Inherits BaseEmailAddressType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EmailAddressType : ExchangeWebServices::BaseEmailAddressType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseEmailAddressType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.EmailAddressType" />类表示电子邮件地址。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmailAddressType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.EmailAddressType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmailAddressType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="M:ExchangeWebServices.EmailAddressType.#ctor" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.EmailAddressType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmailAddress">
+      <MemberSignature Language="C#" Value="public string EmailAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EmailAddress" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressType.EmailAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmailAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EmailAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.EmailAddressType.EmailAddress" />属性获取或设置一个 string 值，包含由此实例的电子邮件地址<see cref="T:ExchangeWebServices.EmailAddressType" />类。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.EmailAddressType.EmailAddress" />属性返回的实例<see cref="T:ExchangeWebServices.EmailAddress" />类。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemIdType ItemId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemIdType ItemId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressType.ItemId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemId As ItemIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemIdType ^ ItemId { ExchangeWebServices::ItemIdType ^ get(); void set(ExchangeWebServices::ItemIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.EmailAddressType.ItemId" />属性获取或设置实例<see cref="T:ExchangeWebServices.ItemIdType" />指定由此实例的电子邮件地址的项标识符的类<see cref="T:ExchangeWebServices.EmailAddressType" />类。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.EmailAddressType.ItemId" />属性返回的实例<see cref="T:ExchangeWebServices.ItemIdType" />类。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MailboxType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MailboxTypeType MailboxType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.MailboxTypeType MailboxType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressType.MailboxType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MailboxType As MailboxTypeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MailboxTypeType MailboxType { ExchangeWebServices::MailboxTypeType get(); void set(ExchangeWebServices::MailboxTypeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MailboxTypeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.EmailAddressType.MailboxType" />属性获取或设置实例<see cref="T:ExchangeWebServices.MailboxTypeType" />指定由此实例的邮箱的类型的类<see cref="T:ExchangeWebServices.EmailAddressType" />类。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MailboxTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool MailboxTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MailboxTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressType.MailboxTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MailboxTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MailboxTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.EmailAddressType.MailboxTypeSpecified" />属性获取或设置一个 Boolean 值，指定是否<see cref="P:ExchangeWebServices.EmailAddressType.MailboxType" />属性序列化为 SOAP 消息。 此属性是必需的如果<see cref="P:ExchangeWebServices.EmailAddressType.MailboxType" />指定属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.EmailAddressType.MailboxTypeSpecified" />属性返回<b>true</b> ，如果<see cref="P:ExchangeWebServices.EmailAddressType.MailboxType" />到 SOAP 消息; 序列化属性否则，该属性返回<b>false</b>。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressType.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.EmailAddressType.Name" />属性获取或设置一个 string 值，指定的邮箱的相关联的电子邮件地址中指定的名称<see cref="P:ExchangeWebServices.EmailAddressType.EmailAddress" />属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.EmailAddressType.Name" />属性返回一个 string 值，包含与相关联的电子邮件地址中指定的邮箱关联的名称<see cref="P:ExchangeWebServices.EmailAddressType.EmailAddress" />属性。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalDisplayName">
+      <MemberSignature Language="C#" Value="public string OriginalDisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalDisplayName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressType.OriginalDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginalDisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoutingType">
+      <MemberSignature Language="C#" Value="public string RoutingType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RoutingType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressType.RoutingType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoutingType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoutingType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.EmailAddressType.RoutingType" />属性获取或设置一个 string 值，指定的路由中指定的电子邮件地址类型<see cref="P:ExchangeWebServices.EmailAddressType.EmailAddress" />属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.EmailAddressType.RoutingType" />属性返回一个 string 值，指定的路由中指定的电子邮件地址类型<see cref="P:ExchangeWebServices.EmailAddressType.EmailAddress" />属性。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

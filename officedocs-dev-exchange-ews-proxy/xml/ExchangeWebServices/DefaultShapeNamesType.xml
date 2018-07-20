@@ -1,0 +1,138 @@
+<Type Name="DefaultShapeNamesType" FullName="ExchangeWebServices.DefaultShapeNamesType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f097d199d775568bbae3cc049b8b1c1fc0157ffb" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603295" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum DefaultShapeNamesType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DefaultShapeNamesType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DefaultShapeNamesType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DefaultShapeNamesType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DefaultShapeNamesType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.DefaultShapeNamesType" />枚举标识的项目或文件夹响应中返回的属性的标准集。</summary>
+    <remarks>
+      <para>此枚举由<see cref="P:ExchangeWebServices.ItemResponseShapeType.BaseShape" />属性<see cref="T:ExchangeWebServices.ItemResponseShapeType" />对象和<see cref="P:ExchangeWebServices.FolderResponseShapeType.BaseShape" />属性<see cref="T:ExchangeWebServices.FolderResponseShapeType" />对象。</para>
+      <para>由 AllProperties，默认情况下，IdOnly 形状返回的属性可以由属性在定义 AdditionalProperties 属性的补充<see cref="T:ExchangeWebServices.ItemResponseShapeType" />和<see cref="T:ExchangeWebServices.FolderResponseShapeType" />对象。</para>
+      <para>下表列出的每个文件夹返回的属性时<see cref="F:ExchangeWebServices.DefaultShapeNamesType.Default" />属性返回文件夹响应。按名称顺序返回给定文件夹的所有子文件夹。</para>
+      <para>默认属性</para>
+      <list type="table">
+        <item>
+          <term>收件箱</term>
+          <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+        </item>
+        <item>
+          <term>联系人</term>
+          <description>文件夹 Id、 显示名称、 总计、 子文件夹计数</description>
+        </item>
+        <item>
+          <term>日历</term>
+          <description>文件夹 Id显示名称，子文件夹计数</description>
+        </item>
+        <item>
+          <term>草稿</term>
+          <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+        </item>
+        <item>
+          <term>已删除邮件</term>
+          <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+        </item>
+        <item>
+          <term>其他文件夹</term>
+          <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+        </item>
+        <item>
+          <term>发件箱</term>
+          <description>文件夹 Id，显示名称、 未读的计数、 总计、 子文件夹计数</description>
+        </item>
+        <item>
+          <term>任务</term>
+          <description>文件夹 Id，由于计数、 总计、 子文件夹计数过去的显示名称，</description>
+        </item>
+        <item>
+          <term>Notes</term>
+          <description>文件夹 Id、 显示名称、 总计、 子文件夹计数</description>
+        </item>
+      </list>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllProperties">
+      <MemberSignature Language="C#" Value="AllProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType AllProperties = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.AllProperties" />
+      <MemberSignature Language="VB.NET" Value="AllProperties" />
+      <MemberSignature Language="C++ CLI" Value="AllProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>返回为 AllProperties 形状定义的所有属性。 此选项不会返回所有可用属性的项或文件夹。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>返回一组定义为项目或文件夹的默认属性。 请参阅有关文件夹返回的属性的详细信息本主题后面的表。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IdOnly">
+      <MemberSignature Language="C#" Value="IdOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType IdOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.IdOnly" />
+      <MemberSignature Language="VB.NET" Value="IdOnly" />
+      <MemberSignature Language="C++ CLI" Value="IdOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>返回仅项目或文件夹的 id。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

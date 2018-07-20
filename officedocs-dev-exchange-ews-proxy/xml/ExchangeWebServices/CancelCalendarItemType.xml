@@ -1,0 +1,69 @@
+<Type Name="CancelCalendarItemType" FullName="ExchangeWebServices.CancelCalendarItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="cd98493d11aa1fcce364e338f7667b5b1969952d" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20603349" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CancelCalendarItemType : ExchangeWebServices.SmartResponseType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CancelCalendarItemType extends ExchangeWebServices.SmartResponseType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CancelCalendarItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CancelCalendarItemType&#xA;Inherits SmartResponseType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CancelCalendarItemType : ExchangeWebServices::SmartResponseType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.SmartResponseType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CancelCalendarItemType" />类表示用于取消会议取消响应对象。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.CancelCalendarItemType" />使用 CreateItem 请求中取消引用的会议。使用<see cref="P:ExchangeWebServices.ResponseObjectCoreType.ReferenceItemId" />属性标识会议取消。<see cref="T:ExchangeWebServices.CancelCalendarItemType" />类是仅适用于组织者的日历项目。</para>
+      <para>
+        <see cref="T:ExchangeWebServices.CancelCalendarItemType" />
+        <see cref="P:ExchangeWebServices.ItemType.Body" />属性不影响取消会议。使用<see cref="P:ExchangeWebServices.SmartResponseType.NewBodyContent" />属性设置的日历项目取消正文。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CancelCalendarItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CancelCalendarItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CancelCalendarItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CancelCalendarItemType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.CancelCalendarItemType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

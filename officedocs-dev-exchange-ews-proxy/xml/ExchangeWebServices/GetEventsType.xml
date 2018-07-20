@@ -1,0 +1,161 @@
+<Type Name="GetEventsType" FullName="ExchangeWebServices.GetEventsType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f0afaecbcbd74733c4d1df79577f294ad7ef00dc" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20602394" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class GetEventsType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GetEventsType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.GetEventsType" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetEventsType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetEventsType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.GetEventsType" />类表示请求获得请求通知订阅事件。</summary>
+    <remarks>
+      <para>对日历项目的更改可能会导致生成的多个事件。对于其他项目的操作还可以生成多个低级别的事件。这些事件是邮箱和更改闲/忙信息和 / 或您的常用日历操作的一部分的数据存储项中的临时项目创建的结果。项类 IPM 的事件。Web 服务客户端应忽略 SchedulePlus.FreeBusy.BinaryData。在创建后删除临时项目。如果尝试检索这些项，则将返回错误，指出找不到项。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>下面的示例演示如何撰写请求获得请求通知订阅事件。用于生成请求的水印必须在最后一个返回的最后一个水印 GetEvents 呼叫，或者，如果这是第一个 GetEvents 呼叫，请从 Subscribe 响应水印。将保存的最后一个事件水印用于下次调用 GetEvents。</para>
+      <code>static void GetEvents(ExchangeServiceBinding esb)
+{ 
+    // Create the GetEvents request.
+    GetEventsType &lt;span class="label"&gt;request&lt;/span&gt; = new GetEventsType();
+
+    // Identify the subscription identifier and watermark for the subscription 
+    // that will be polled for changes in the Exchange store.
+    &lt;span class="label"&gt;request&lt;/span&gt;.SubscriptionId = "2448550a-4685-412c-bc40-62f0999a8bdb";
+    &lt;span class="label"&gt;request&lt;/span&gt;.Watermark = "AQAAAM/SnQORsD1IqTUHelGT0oxxHQAAAAAAAAE=";
+
+    // Send the request and get the response.
+    GetEventsResponseType response = esb.GetEvents(&lt;span class="label"&gt;request&lt;/span&gt;);
+    ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+    ResponseMessageType[] rmta = aormt.Items;
+
+    foreach (ResponseMessageType rmt in rmta)
+    {
+        // Determine whether the request was a success.
+        if (rmt.ResponseClass == ResponseClassType.Success)
+        {
+            // Cast to appropriate response message type.
+            GetEventsResponseMessageType responseMessage = (rmt as GetEventsResponseMessageType);
+
+            // Get the notifications.
+            NotificationType notificaton = responseMessage.Notification;
+            BaseNotificationEventType[] bneta = notificaton.Items;
+
+            foreach (BaseNotificationEventType bnet in bneta)
+            {
+                // TODO: Handle each notification. Refer to the Push Notification 
+                //       sample for an example of how to do this.
+            }
+
+            if (notificaton.MoreEvents)
+            {
+                // TODO: Call GetEvents again with the watermark to get the
+                //       remaining events.
+            }
+        }
+    }
+}</code>
+      <para>有关拉通知的详细信息，请参阅推送通知示例应用程序。</para>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GetEventsType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.GetEventsType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetEventsType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.GetEventsType" />构造函数初始化的新实例<see cref="T:ExchangeWebServices.GetEventsType" />类。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriptionId">
+      <MemberSignature Language="C#" Value="public string SubscriptionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubscriptionId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetEventsType.SubscriptionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetEventsType.SubscriptionId" />属性获取或设置一个订阅的标识符。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.GetEventsType.SubscriptionId" /> 属性返回一个字符串。</value>
+        <remarks>
+          <para>表示订阅标识符的字符串是一个 GUID。创建订阅时由客户端访问服务器生成 GUID。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Watermark">
+      <MemberSignature Language="C#" Value="public string Watermark { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Watermark" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetEventsType.Watermark" />
+      <MemberSignature Language="VB.NET" Value="Public Property Watermark As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Watermark { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.GetEventsType.Watermark" />属性获取或设置一个 string 值，该值代表邮箱事件队列中的事件书签。 此属性是必需的。 这是一个读/写属性。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.GetEventsType.Watermark" /> 属性返回一个字符串。</value>
+        <remarks>
+          <para>此水印介绍其中 GetEvents 操作开始返回事件。传递给 GetEvents 水印必须返回到客户端的最后一个水印。如果订阅后 GetEvents 第一次调用，返回的 Subscribe 水印应传递给 GetEvents。如果已调用 GetEvents，调用传递给下一个水印 GetEvents 调用必须返回从以前 GetEvents 的最后一个事件水印。</para>
+          <para>如果<see cref="P:ExchangeWebServices.GetEventsType.Watermark" />属性设置无效水印，<see cref="F:ExchangeWebServices.ResponseCodeType.ErrorInvalidWatermark" />到客户端应用程序，则返回错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
