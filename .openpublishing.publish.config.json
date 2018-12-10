@@ -4,7 +4,7 @@
       "docset_name": "officedocs-dev-exchange-ews-proxy",
       "build_source_folder": "officedocs-dev-exchange-ews-proxy",
       "build_output_subfolder": "officedocs-dev-exchange-ews-proxy",
-      "locale": "ru-ru",
+      "locale": "zh-cn",
       "monikers": [
         "exchange-ews-proxy"
       ],
@@ -54,7 +54,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ru-ru",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
       "branch": "master",
       "branch_mapping": {}
     }
